@@ -5,44 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 3 - styles basis</title>
-    <style>
-        /* 
-        селектор {
-        property-name: property-value;
-        property-name: property-value;
-        ...
-        }
-        */
-        p {
-            background-color: aquamarine;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        h1{
-            background-color: brown;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: xx-large;
-        }
-        h2,h3,h4{ /*Групповой селектор*/
-            background-color: blanchedalmond;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: small;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
+    <div>
+        &lt; &gt;
+        &amp; 
+        &quot;
+        &nbsp;
+        &copy;
+        &reg;
+        &euro;
+        &mdash; 
+        &times;
+        
+    </div>
+
+    <p class="font-style">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa amet nihil tenetur, mollitia veritatis ad!
+    </p>
     <h1>Stylization basis</h1>
-    <h2>Headline 2</h2>
-    <h3>Headline 3</h3>
+    <h2 class="bg-green color-blue">Headline 2</h2>
+    <h3 class="bg-green color-blue">Headline 3</h3>
     <h4>Headline 4</h4>
+    <h6 id="header-styled">Headline6</h6>
     <p style="background-color: cadetblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 2rem;">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rerum itaque et corrupti nulla veniam.
     </p>
-    <p>
+    <p class="bg-green color-blue">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi eveniet hic sit quae, deserunt autem dolore
         tenetur maxime fugit accusamus.
     </p>
+    <p style="font-size: 0.9em;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga earum, nisi
+        eos maxime dignissimos?</p>
     <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae repellendus nobis mollitia. Earum, dolores
         veritatis.
