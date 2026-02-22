@@ -5,21 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 3 - styles basis</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
+
+    <style>
+        li::marker {
+            color: brown;
+            content: "😏";
+        }
+
+        p::before {
+            content: "🐔";
+        }
+
+        h1::after {
+            content: 🗡;
+        }
+
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            /* list-style-image: url("icons/pngtree-red-banner-shape-blank-islamic-textbox-transparent-background-image-png-image_14874049"); */
+        }
+
+        ol {
+            list-style-type: upper-latin
+        }
+
+        .nestled-list.ul {
+            list-style-type: square;
+            color: rgb(97, 111, 106);
+        }
+        div{
+            background-color: brown;
+            /* padding-left: 10px;
+            padding-right: 40px;
+            padding-bottom: 25px; 
+            padding-top: 8px;
+            */
+            /*top -> right -> bottom -> left*/
+            /* padding: 10px 25px 50px 10px */
+            /*top -> left and right -> bottom*/
+            /* padding: 10px 30px 5px; */
+            /*top and bottom -> left and right*/
+            /* padding: 20px 35px; */
+            margin: 30px;
+            padding: 40px;
+        }
+    </style>
 </head>
 
 <body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aut nulla? Eveniet exercitationem in ea
+        doloribus ex. Harum alias voluptatem autem tenetur dicta aliquam sequi, vel adipisci odio eius recusandae ipsum
+        quia ea corporis laudantium nam repellat consequatur ratione? Porro corrupti quo repellendus aspernatur
+        accusamus quas officia dolores debitis harum.</div>
+
+    <ul class="nestled-list">
+        <li> Програмирование
+            <ul>
+                <li>Frontend (HTML,CSS,JS)</li>
+                <li>Backend (C#,Java,Python)</li>
+            </ul>
+        </li>
+        <li>Дизайн</li>
+    </ul>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol>
+        <li>Открыть редактор</li>
+        <li>Написать код</li>
+        <li>Закрыть редактор</li>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Язык описания структуры веб-страницы</dd>
+        <dt>IDE</dt>
+        <dd>Интегрированное пространство разработки</dd>
+    </dl>
+
     <div>
         &lt; &gt;
-        &amp; 
+        &amp;
         &quot;
         &nbsp;
         &copy;
         &reg;
         &euro;
-        &mdash; 
+        &mdash;
         &times;
-        
+
     </div>
 
     <p class="font-style">
