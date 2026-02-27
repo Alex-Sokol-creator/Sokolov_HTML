@@ -1,0 +1,25 @@
+*{
+    background-color: rgb(240, 238, 238);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+}
+mark{
+    background-color: rgb(243, 105, 135);
+    /* text-align: center; */
+    color: black;
+    font-size: x-large;
+    padding: 5px;
+}
+strong{
+    color: rgb(180, 19, 51);
+    font-style: italic;
+}
+sup{
+    background-color: rgb(243, 105, 135);
+    color: black;
+}
+.marks{
+    text-align: center;
+}

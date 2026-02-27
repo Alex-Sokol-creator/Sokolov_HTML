@@ -1,0 +1,16 @@
+*{
+    background-color:gainsboro;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: medium;
+}
+sup{
+    color: blue;
+}
+#moreinfo{
+    font-size: small;
+}
+mark{
+    color: rgb(92, 120, 173);
+}
