@@ -1,0 +1,64 @@
+* {
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 38px;
+}
+
+ul {
+    list-style: none;
+    margin-right: 60%;
+    /* margin-left: 80px;
+    padding-right: 50px; */
+}
+
+li {
+    padding: 10px;
+    padding-left: 40px;
+}
+
+li::after {
+    /* text-decoration: none; */
+    content: "❌";
+    padding-left: 25px;
+
+}
+
+.count {
+    background-color: rgba(104, 180, 201, 0.856);
+}
+
+.count::before {
+    content: url(unchecked_16.png);
+    padding-right: 10px;
+}
+
+.uncount {
+    background-color: rgb(147, 205, 223);
+}
+
+.uncount::before {
+    content: url(unchecked_16.png);
+    padding-right: 10px;
+}
+
+.done {
+    background-color: rgba(209, 208, 208, 0.637);
+    /* text-decoration: line-through; */
+}
+
+.done::before {
+    content: url(checked_16.png);
+    padding-right: 10px;
+}
+del{
+    background-color: rgba(211, 211, 211, 0);
+}
+
+/* .cancel{
+    color: rgb(173, 23, 23);
+    padding-left: 10px;
+} */
