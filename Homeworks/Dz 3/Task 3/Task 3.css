@@ -1,0 +1,24 @@
+*{
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol{
+    color: black;
+    margin: 20px;
+}
+.example{
+    color: rgba(128, 128, 128, 0.623);
+}
+.synonyms{
+    color: rgb(126, 85, 202);
+}
+li{
+    padding: 2px;
+}
+b{
+    font-weight: 900;
+    color: rgba(128, 128, 128, 0.808);
+}
