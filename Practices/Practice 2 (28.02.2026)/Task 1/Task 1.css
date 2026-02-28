@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../../Shared_Resources/colorful-calm-e-meeting-background-free-vector.jpg);
+    background-size: cover;
+}
+
+p {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.750);
+    margin: 100px;
+}
