@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+    <style>
+        * {
+            margin: 0;
+            background-color: aliceblue;
+        }
+
+        .img-container {
+            border: 3px cadetblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            width: 25%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        img:hover {
+            width: 40%;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        a:link {
+            color: chocolate;
+        }
+
+        a:visited {
+            color: blueviolet;
+            text-decoration: dotted line-through black 10px;
+        }
+
+        a:focus {
+            color: darkslategrey;
+        }
+
+        a:active {
+            color: thistle;
+        }
+
+        .button {
+            width: 30%;
+            padding: 10px 0;
+            margin: auto;
+            text-align: center;
+            background-color: red;
+            border: solid red 1px;
+            border-radius: 10px;
+            transition-property: all;
+            transition-duration: 0.8s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            /* transition: all 0.8s ease 0s; */
+        }
+
+        .button a {
+            background-color: red;
+            color: black;
+        }
+
+        .button a:hover {
+            background-color: transparent;
+            color: black;
+        }
+
+        .button:hover {
+            background-color: rgb(105, 34, 199);
+            border-color: rgb(67, 42, 16);
+        }
+        .transform-example{
+            margin: 10px;
+            padding: 10px;
+            height: 150px;
+            border: solid cadetblue 5px;
+        }
+        .square{
+            width: 50px;
+            height: 50px;
+            margin: 15px auto;
+            background-color: black;
+            transition: all 0.8s ease 0s;
+        }
+        .translate-example:hover{
+            transform: translate(25px /*по х*/,35px /*по y*/);
+        }
+        .scale-example:hover{
+            transform: scale(2,0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Анимации и гиперссылки</h1>
+
+    <div class="transform-example">
+        <div class="translate-example square"></div>
+        <div class="scale-example square"></div>
+    </div>
+
+
+    <div class="button">
+        <a href="#">Нажми!!!</a>
+    </div>
+
+    <p>
+        <a
+            href="https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BF%D0%B5%D1%80%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0">Гиперссылка</a>,
+        это элемент, что перенаправляет на другую страницу <br>
+        <a href="../Lesson 4/Lesson 4.html">Ссылка</a> на lesson 4 <br>
+        <a href="#img-id">Ссылка</a> на элемент внутри файла <br>
+        <a href="https://ru.wikipedia.org/wiki/Poppy_Playtime">Ссылка</a> на сайт поппи плейтайм
+    </p>
+
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laboriosam non fuga, culpa dolorem corporis
+        quibusdam soluta ipsum ex quod qui vero error enim eligendi cum ipsam obcaecati! Quod consequuntur animi
+        perspiciatis autem deserunt maiores sit sint, nostrum tempore, consectetur, corporis facilis sapiente harum
+        possimus est suscipit eligendi fugiat eum. Maiores id expedita quo quas, porro consequuntur illum voluptatem.
+        Est nisi nesciunt esse quos rerum doloribus eligendi assumenda veritatis. Corporis minima neque laudantium, cum
+        distinctio, aliquam eos voluptate quidem sapiente recusandae accusantium esse! Sequi libero dolor molestiae
+        dicta tenetur quasi deleniti est inventore quis vel, nobis illum illo vitae nesciunt veritatis quae cumque
+        excepturi mollitia dolores voluptate sit repellendus ipsam. Incidunt inventore ad odio? Consequatur dolor ab
+        tempore expedita laudantium provident distinctio, tempora minima nobis blanditiis vero ex fugit numquam. Sequi
+        sint adipisci molestias mollitia iure veritatis obcaecati odit enim laborum, deserunt non eius, molestiae totam
+        officiis voluptas ad dolore. Earum quidem natus voluptatem nulla autem. Reiciendis aut molestiae velit soluta
+        adipisci quis consectetur numquam necessitatibus fugiat deleniti eaque, sit distinctio amet optio nemo debitis
+        fuga odio unde magni vero dolor nisi. Voluptas similique dolor atque modi? Pariatur iste culpa nesciunt tempora
+        sunt qui, nostrum laboriosam a eum recusandae ab perspiciatis delectus, magni eius repellat. Reiciendis illum
+        est ex beatae labore ipsam. Soluta cum nam iure impedit distinctio non atque est dolore quis dolorem! Iure
+        recusandae asperiores pariatur corrupti autem repellat dolor amet nisi a. Accusantium officia distinctio
+        molestiae cumque consequatur unde atque, earum voluptatum sit incidunt ad odit dolorum perspiciatis alias cum
+        quos qui dolor placeat rerum officiis labore consequuntur doloribus numquam. Minus veniam vero, sapiente
+        accusantium recusandae nemo aperiam provident odio totam eveniet blanditiis eius facere, enim nobis pariatur
+        repellendus, asperiores veritatis reprehenderit sit laboriosam qui molestias culpa doloremque commodi. Deleniti
+        est fuga quisquam reprehenderit, dicta quas in provident explicabo magni odio odit atque pariatur ducimus
+        expedita ipsam illum sapiente ipsa cupiditate vitae. Blanditiis optio asperiores ipsa officiis voluptatum iure
+        provident cupiditate laborum, dolore est ex tempore! Quibusdam quia ad impedit voluptatem corrupti consequuntur
+        unde tenetur ex incidunt qui sunt vero voluptates architecto cumque voluptatum, similique blanditiis molestias
+        iure nesciunt eveniet commodi ea. Voluptatum ipsam quod consectetur eum provident veritatis nulla nam amet,
+        tempore voluptatem ratione voluptas quisquam molestias exercitationem sed nisi porro excepturi officia. Mollitia
+        eum quasi aperiam. Ratione quaerat labore minus ex mollitia, in quidem, sunt veritatis sed, inventore ad
+        consequatur facilis officia fugiat eius? Vitae, deleniti nihil dolorum facilis quaerat nostrum aut rerum, id
+        reiciendis eveniet consequatur perferendis quo accusantium. Sapiente id ea deleniti, molestiae similique sunt
+        debitis earum aut quis tempora, dignissimos excepturi. Velit impedit veniam quis facere fugiat quisquam deserunt
+        illum doloribus saepe fuga? Aut modi, ullam incidunt fuga dolorum dolorem illum ipsum consequatur sunt
+        laboriosam omnis et id. Est quam aperiam ad delectus ea perspiciatis hic illo? Ipsum iste inventore natus
+        maiores voluptatum aperiam dolorem earum sequi, ab atque possimus molestiae placeat consectetur distinctio
+        soluta sit reiciendis officiis. Enim, nesciunt excepturi! Aspernatur ipsam velit quam impedit, totam quos
+        temporibus accusantium quidem officiis sed blanditiis reprehenderit vel sapiente fuga omnis expedita praesentium
+        nostrum reiciendis corrupti! Eligendi assumenda, neque vel corporis quia repellat consequuntur doloribus
+        laboriosam tempora accusamus, praesentium nobis, deserunt explicabo eos atque? Quae molestias ad deleniti
+        maiores totam obcaecati minus eos magnam deserunt mollitia consequuntur adipisci laudantium quos ipsam, unde
+        iste ex impedit quam soluta? Corrupti similique omnis maiores rerum aliquam voluptatem, minus, accusamus
+        laudantium itaque magnam, consequatur ducimus nostrum dolor illum animi provident tempore! Tenetur ullam velit
+        ut corporis enim sed nihil iste, fugiat eos, et sint deserunt. Earum sint esse laudantium commodi distinctio
+        similique. Tempora dolorem molestias, expedita officia animi adipisci facilis quis vero dolorum quasi sed non ut
+        ex tenetur suscipit, doloremque a? Magni adipisci, libero enim officia est repudiandae nam officiis ipsam qui
+        sequi! Maiores consequuntur distinctio voluptatum repellendus possimus provident ullam nobis voluptate sed sunt
+        in eligendi itaque tenetur obcaecati qui, aperiam nulla perferendis vero sint ipsa voluptatibus dolorum. Natus
+        ullam saepe debitis praesentium! Porro sint non odio inventore nobis, et pariatur quidem obcaecati facilis ab
+        debitis alias. Eaque cupiditate quam reprehenderit dolorem provident at tempora veritatis molestias assumenda
+        sed ipsam dolor velit nihil, architecto ipsum quas minima corporis fugit porro sint ratione fugiat. Impedit
+        laborum reiciendis molestias similique maxime facere odit tempora minima officia ex cum unde eaque
+        exercitationem omnis, expedita quo. Itaque odit vel sint, aut delectus corporis fugit dolor deserunt sed iusto
+        nam assumenda, reprehenderit aspernatur quam doloremque quasi libero ipsum vitae eaque saepe possimus at tempora
+        placeat! Quod in tenetur vel. Accusamus libero alias molestiae, reprehenderit dolorem quasi consequuntur neque
+        corporis cumque sit qui quod nulla odio atque ipsam omnis. Accusantium odit sed et id harum eos libero quasi,
+        eaque praesentium impedit repudiandae nihil molestiae. Tempore consequatur et repellat! Vitae soluta deleniti
+        accusamus aut, modi eveniet labore facere dolores voluptatibus officia expedita dicta quaerat ad atque! Nostrum
+        minima quae sapiente explicabo impedit inventore nisi natus tempora, repellendus suscipit adipisci eos ipsum
+        unde! Corrupti aliquam quos esse maxime, magni voluptatibus eos velit modi, saepe, molestiae nemo impedit optio
+        minus cum. Id voluptatibus aperiam itaque, eaque blanditiis corporis fugiat soluta iste fuga totam aut harum
+        provident quisquam ad rerum repudiandae vel porro quam voluptas! Sint nisi sunt fugit nobis repellat impedit
+        voluptatibus quidem amet? Vero suscipit provident aperiam. Commodi, asperiores! Officia voluptatibus veniam
+        numquam distinctio? Id assumenda, maxime vero sunt et consequatur optio soluta sequi ducimus, voluptatem
+        consectetur nostrum velit vitae. Iste, similique neque mollitia veniam ut impedit voluptas ab, odit nemo quidem
+        laboriosam, molestias ipsam deserunt esse cum. Debitis hic eos iure. Iure eaque deserunt consequatur dolore
+        minima dolor libero consectetur? Odio, cumque ut autem in officiis magni, amet nihil at voluptates corrupti sit
+        maxime? Molestiae rerum fugiat corporis laboriosam ut qui eum cumque ex, distinctio autem soluta molestias
+        voluptatum dolor, architecto consequuntur eaque, optio ipsam iure. Minus officiis impedit consectetur excepturi
+        illo. Qui ipsa aperiam tenetur optio ipsum facere voluptate distinctio, iste ex placeat voluptatibus totam
+        quidem eveniet iusto aut corporis, sunt alias est recusandae doloribus quibusdam? Exercitationem totam possimus
+        odit labore laborum!
+    </p>
+    <div class="img-container"><img id="img-id" src="../../Shared_Resources/Catnap.png" alt="Catnap"></div>
+</body>
+
+</html>
