@@ -1,0 +1,20 @@
+*{
+    background-color: rgb(241, 240, 240);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#First-sentence{
+    color: rgb(122, 122, 122);
+}
+
+#Contents{
+    text-align: center;
+}
+
+p,ol,ul{
+    font-family: 'Times New Roman', Times, serif;
+}
