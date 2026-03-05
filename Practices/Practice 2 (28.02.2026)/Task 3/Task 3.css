@@ -10,4 +10,16 @@ h1{
 
 #main{
     text-align: center;
+    border: 1px solid black;
+    margin: 0;
+}
+
+#small-pictures{
+    text-align: center;
+    border: 1px solid black;
+    margin: 0;
+}
+
+div{
+    width: 500px;
 }
