@@ -6,20 +6,28 @@ h1{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid black;
-}
-
-#main{
-    text-align: center;
-    border: 1px solid black;
+    padding: 30px;
     margin: 0;
 }
 
-#small-pictures{
+.border-parameters{
     text-align: center;
     border: 1px solid black;
     margin: 0;
 }
 
 div{
-    width: 500px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.small{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#all_smalls{
+
 }
