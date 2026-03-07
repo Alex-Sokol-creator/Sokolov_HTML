@@ -1,39 +1,88 @@
-body{
+body {
     background-color: aliceblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     font-size: large;
+    color: beige;
 }
 
-#header{
+#header {
     background-color: rgb(180, 70, 92);
-    color: beige;
+    width: 1050px;
     padding: 35px 70px;
     margin: 15px;
 }
 
-#menu{
+#menu {
     background-color: rgb(138, 68, 82);
-    color: beige;
     padding: 15px 70px;
     margin: 15px;
+    width: 1050px;
 }
 
-.asides{
+.asides {
     background-color: rgb(201, 123, 136);
-    color: beige;
-    margin: 15px;
+    margin: 10px 15px;
     width: 160px;
 }
 
-#aside1{
+#aside1 {
     padding: 40px 70px;
     height: 20px;
+    margin-top: 0;
 }
 
-#aside2{
+#aside2 {
     padding: 40px 70px;
     height: 60px;
+}
+
+#left-side {
     float: left;
 }
+
+#main-content {
+    background-color: rgb(201, 123, 136);
+    padding: 20px 60px;
+    width: 600px;
+    height: auto;
+    float: left;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.sections{
+    background-color: rgb(221, 166, 176);
+    margin: 10px 0;
+    padding: 15px 65px;
+    height: 80px;
+}
+
+#right-side{
+    float: left;
+    margin: 15px;
+    margin-top: 0;
+}
+
+#aside3{
+    background-color: rgb(201, 123, 136); 
+    width: 140px;
+    height: 260px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    padding: 55px;
+     box-sizing: border-box;
+}
+
+#footer{
+    clear: both;
+    background-color: rgb(138, 68, 82);
+    padding: 15px 70px;
+    margin: 15px;
+    margin-top: 30px;
+    width: 1050px;
+}
+
