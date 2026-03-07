@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6: Tables</title>
+    <style>
+        .avatar {
+            width: 150px;
+            height: auto;
+        }
+
+        table {
+            margin: 25px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            /* border-spacing: 10px; */
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .avatar-column {
+            text-align: center;
+            background-color: darkseagreen;
+            border: 1px solid black;
+            width: 30%;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+
+        .hide-empty {
+            empty-cells: hide;
+            border-collapse: separate;
+        }
+
+        caption {
+            border: 1px solid black;
+            background-color: darksalmon;
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Пользователи</caption>
+        <colgroup>
+            <col class="avatar-column">
+            <col>
+            <col">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Аватар</th>
+                <th>Имя</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img class="avatar" src="../../Shared_Resources/Catnap.png" alt="Catnap"></td>
+                <td>Джон Доу</td>
+                <td><a href="mailto:john.dow@gmail.com">john.dow@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><img class="avatar" src="../../Shared_Resources/Catnap.png" alt="Catnap"></td>
+                <td>Джон Доу</td>
+                <td><a href="mailto:john.dow@gmail.com">john.dow@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><img class="avatar" src="../../Shared_Resources/Catnap.png" alt="Catnap"></td>
+                <td>Джон Доу</td>
+                <td><a href="mailto:john.dow@gmail.com">john.dow@gmail.com</a></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Это футер таблицы!</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>57</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>555-5678</td>
+        </tr>
+    </table>
+
+    <table class="hide-empty">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem ipsum dolor sit amet consectetur.</td>
+            <td>Lorem, ipsum.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing.</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
