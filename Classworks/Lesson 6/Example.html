@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Lesson 6</title>
+    <style>
+        table{
+            width: 80%;
+            min-width: 650px;
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            text-align: right;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        th{
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        th,td{
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        tr td:first-child{
+            text-align: left;
+            color: #666;
+            padding: 0.7em;
+        }
+
+        .col-1{
+            background-color: #ddd;
+            width: 17%;
+        }
+
+        .col-2{
+            background-color: #17d0d7;
+            width: 17%;
+        }
+
+        .col-3{
+            background-color: #8ac149;
+            width: 17%;
+        }
+
+        .col-4{
+            background-color: #feca28;
+            width: 17%;
+        }
+
+        .col-5{
+            background-color: #f44236;
+            width: 17%;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>TITLE TABLE</caption>
+        <colgroup>
+        <col class="col-1">
+        <col class="col-2">
+        <col class="col-3">
+        <col class="col-4">
+        <col class="col-5">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Specification</th>
+                <th>Free</th>
+                <th>Basic</th>
+                <th>Standart</th>
+                <th>Premium</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>$ 0.00</th>
+                <th>$ 9.99</th>
+                <th>$ 19.99</th>
+                <th>$ 29.99</th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
