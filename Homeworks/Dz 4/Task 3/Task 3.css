@@ -1,0 +1,39 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+}
+
+#header{
+    background-color: rgb(180, 70, 92);
+    color: beige;
+    padding: 35px 70px;
+    margin: 15px;
+}
+
+#menu{
+    background-color: rgb(138, 68, 82);
+    color: beige;
+    padding: 15px 70px;
+    margin: 15px;
+}
+
+.asides{
+    background-color: rgb(201, 123, 136);
+    color: beige;
+    margin: 15px;
+    width: 160px;
+}
+
+#aside1{
+    padding: 40px 70px;
+    height: 20px;
+}
+
+#aside2{
+    padding: 40px 70px;
+    height: 60px;
+    float: left;
+}
