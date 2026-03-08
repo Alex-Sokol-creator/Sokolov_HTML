@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasks 1 and 2</title>
     <style>
-        * {
+        body {
             background-color: aliceblue;
         }
 
@@ -15,19 +15,40 @@
         }
 
         .border-bar {
-            margin: 10px;
-            margin-right: 85%;
-            padding: 15px;
+            margin: 15px;
+            width: 350px;
             height: auto;
-            border: solid orange 5px;
+            border: 2px solid orange;
         }
 
         .download-bar {
-            width: 30px;
-            height: 30px;
-            margin: auto;
+            width: 50px;
+            height: 50px;
             background-color: orange;
             transition: all 0.8s ease 0s;
+            animation: download-bar;
+        }
+
+        @keyframes download-bar {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25%{
+                transform: translate(50%,0);
+            }
+
+            50% {
+                transform: translate(50%, 0);
+            }
+
+            75%{
+                transform: translate(-50%,0);
+            }
+
+            100% {
+                transform: translate(-50%,0);
+            }
         }
     </style>
 </head>
@@ -35,7 +56,7 @@
 <body>
     <h1>Задание 1</h1>
     <div class="border-bar">
-        <div class = "download-bar"></div>
+        <div class="download-bar"></div>
     </div>
 
 </body>
