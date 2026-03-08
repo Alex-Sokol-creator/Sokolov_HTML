@@ -1,0 +1,92 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: beige;
+    font-size: small;
+}
+
+#footer{
+    background-color: rgb(9, 9, 134);
+    height: 300px;
+}
+
+#left-column{
+    float: left;
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    margin-left: 200px;
+    text-align: left;
+}
+
+#right-column{
+    float: left;
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    margin-left: 350px;
+}
+
+#images{
+    float: left;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+
+hr{
+    clear: both;
+    width: 90%;
+    margin: 70px 80px;
+    margin-bottom: 35px;
+}
+
+p{
+    text-align: left;
+}
+
+p:hover{
+    text-decoration: underline;
+}
+
+#fb,#inst,#yout{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-size: cover;
+    margin: 10px;  
+}
+
+#fb{
+    background-image: url(Images/fb_gray.png);
+}
+
+#fb:hover{
+    background-image: url(Images/fb.png);
+}
+
+#inst{
+    background-image: url(Images/insta_gray.png);
+}
+
+#inst:hover{
+    background-image: url(Images/insta.png);
+}
+
+#yout{
+    background-image: url(Images/youtube_gray.png);
+}
+
+#yout:hover{
+    background-image: url(Images/youtube.png);
+}
+
+#Copyright{
+    text-align: center;
+}
+
+#Copyright:hover{
+    text-decoration: none;
+}
