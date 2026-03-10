@@ -9,6 +9,7 @@
         body {
             background-color: aliceblue;
             box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         h1 {
@@ -57,20 +58,129 @@
 
         }
 
-        #heart{
+        #heart {
             width: 100px;
             height: auto;
             filter: grayscale(100%);
-            margin: 30px 200px;
-            margin-top: 0;
+            margin: 0 200px;
             transition: all 5s ease 0s;
         }
 
-        #heart:hover{
+        #heart:hover {
             filter: grayscale(0%);
             width: 400px;
             height: auto;
-            transform: translate(-140px,-80px);
+            transform: translate(-140px, -80px);
+            margin-bottom: 50px;
+        }
+
+        #greeting {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: x-large;
+        }
+
+        #img-to-rotate {
+            position: relative;
+        }
+
+        .rot-img {
+            width: 90px;
+            height: auto;
+            position: absolute;
+            left: 50%;
+            top: 200px;
+            transform: translate(-50%, 0);
+        }
+
+        .rot-img-big{
+            width: 130px;
+            height: auto;
+        }
+
+        #calc {
+            z-index: 1;
+            animation: calc-anim;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes calc-anim {
+            from{
+                transform: translate(0,0);
+            }
+            to{
+                /* transform: translate(-300px, 0); */
+                transform: rotate(-30deg);
+                transform-origin: -300% 550%;
+            }
+        }
+
+        #book {
+            z-index: 0.9;
+            animation: book-anim;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes book-anim {
+            from{
+                transform: translate(0,0);
+            }
+            to{
+                /* transform: translate(-300px, 0); */
+                transform: rotate(-17deg);
+                transform-origin: -450% 355%;
+            }
+        }
+
+        #paper {
+            z-index: 0.8;
+            animation: paper-anim;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes paper-anim {
+            from{
+                transform: translate(0,0);
+            }
+            to{
+                /* transform: translate(-300px, 0); */
+                transform: rotate(17deg);
+                transform-origin: 500% 30%;
+            }
+        }
+
+        #pallete {
+            z-index: 0.7;
+            animation: pallete-anim;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes pallete-anim {
+            from{
+                transform: translate(0,0);
+            }
+            to{
+                transform: rotate(30deg);
+                transform-origin: 400% 300%;
+            }
         }
     </style>
 </head>
@@ -84,6 +194,17 @@
     <h1>Задание 2</h1>
     <img id="heart" src="Images/favorites.png" alt="A heart">
 
+    <h1>Задание 3</h1>
+    <div>
+        <p id="greeting">Hello, my site!</p>
+        <div id="img-to-rotate">
+            <img class="rot-img" id="calc" src="Images/calc.png" alt="calculator">
+            <img class="rot-img rot-img-big" id="book" src="Images/book.png" alt="book">
+            <img class="rot-img rot-img-big" id="paper" src="Images/paper.png" alt="paper-list">
+            <img class="rot-img" id="pallete" src="Images/pallete.png" alt="color pallet">
+            <img class="rot-img" id="pencil" src="Images/pencil.png" alt="pencil">
+        </div>
+    </div>
 </body>
 
 </html>
