@@ -18,6 +18,7 @@
             width: 25px;
             height: auto;
             padding: 10px 5px;
+            padding-bottom: 5px;
         }
 
         .black {
@@ -47,31 +48,79 @@
             margin: 15px;
         }
 
-        td:first-child{
+        td:first-child {
             padding: 10px 20px;
             padding-left: 8px;
         }
 
-        #Thursday td{
+        #Thursday td {
             border-bottom: none;
         }
 
-        #Friday td{
+        #Friday td {
             border-top: 1px solid gold;
             border-bottom: 1px solid gold;
         }
 
-        #Friday td:first-child{
+        #Friday td:first-child {
             background-color: gold;
         }
 
-        #Saturday td{
+        #Saturday td {
             border-top: none;
         }
 
-        #headlines th{
+        #headlines th {
             writing-mode: vertical-lr;
             padding: 10px 0;
+        }
+
+        /* #description{
+            height: 55px;
+        } */
+
+        p {
+            display: inline-block;
+            margin-top: 8px;
+            margin-left: 10px;
+            font-weight: normal;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: medium;
+            color: rgb(133, 133, 133);
+        }
+
+        .descr-float {
+            float: left;
+            margin: 5px 15px;
+            width: auto;
+        }
+
+        #no-black-descr {
+            width: 27px;
+            height: 35px;
+            background-color: white;
+            border: 1px solid rgb(141, 141, 141);
+            float: left;
+        }
+
+        #partly-black-descr {
+            float: left;
+        }
+
+        #black-descr {
+            float: left;
+        }
+
+        #p-b-img-descr {
+            width: 28px;
+            padding: 5px 0;
+            border: 1px solid black;
+        }
+
+        #b-img-descr {
+            width: 28px;
+            padding: 5px 0;
+            border: 1px solid rgb(141, 141, 141);
         }
     </style>
 </head>
@@ -338,7 +387,7 @@
 
                 <tr id="Saturday">
                     <td>Субота</td>
-                   <td class="black"><img src="Special signs/free-icon-flash-off-7002166.png" alt="Blackout"></td>
+                    <td class="black"><img src="Special signs/free-icon-flash-off-7002166.png" alt="Blackout"></td>
                     <td class="black"><img src="Special signs/free-icon-flash-off-7002166.png" alt="Blackout"></td>
                     <td class="black"><img src="Special signs/free-icon-flash-off-7002166.png" alt="Blackout"></td>
                     <td class="black"><img src="Special signs/free-icon-flash-off-7002166.png" alt="Blackout"></td>
@@ -424,6 +473,24 @@
             </tbody>
 
         </table>
+    </div>
+
+    <div id="description">
+        <div class="descr-float">
+            <div id="no-black-descr"></div>
+            <p>Світло є</p>
+        </div>
+        <div class="descr-float">
+            <div id="partly-black-descr"><img class="partly-black" id="p-b-img-descr"
+                    src="Special signs/free-icon-flash-off-7002166.png" alt="Partly-Blackout">
+            </div>
+            <p>Можливо відключення</p>
+        </div>
+        <div class="descr-float">
+            <div id="black-descr"><img class="black" id="b-img-descr"
+                    src="Special signs/free-icon-flash-off-7002166.png" alt="Blackout"></div>
+            <p>Світла немає</p>
+        </div>
     </div>
 
 </body>
