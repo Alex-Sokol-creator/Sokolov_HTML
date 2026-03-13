@@ -8,7 +8,22 @@
     <style>
         body {
             background-color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        *{
+            text-align: center;
+            font-size: large;
+        }
+
+        th{
+            text-transform: uppercase;
+
+        }
+
+        .cursive-text{
+            font-style: italic;
+            text-align: left;
         }
 
         .empty-td {
@@ -32,11 +47,40 @@
         table {
             border-collapse: collapse;
         }
+
+
+        #Aspect, .empty-td-back{
+            background-color: rgba(255, 217, 0, 0.336);
+        }
+
+        #Simple{
+            background-color: rgba(48, 107, 184, 0.425);
+        }
+
+        #Progressive{
+            background-color: rgba(240, 51, 114, 0.452);
+        }
+
+        #Perfect{
+            background-color: rgba(10, 236, 161, 0.445);
+        }
+
+        #Perfect-Progressive{
+            background-color: rgba(255, 165, 180, 0.651);
+        }
     </style>
 </head>
 
 <body>
     <table>
+        <colgroup>
+        <col id="Aspect">
+        <col>
+        <col id="Simple">
+        <col id="Progressive">
+        <col id="Perfect">
+        <col id="Perfect-Progressive">
+        </colgroup>
         <thead>
             <tr id="headlines">
                 <th colspan="2">Aspect</th>
@@ -50,14 +94,14 @@
         <tbody>
             <tr>
                 <td rowspan="2" class="border-delete"><strong>MEANING</strong></td>
-                <td class="empty-td"></td>
-                <td class="cursive-text">a common aspect</td>
-                <td class="cursive-text">a process</td>
-                <td class="cursive-text">priority</td>
-                <td class="cursive-text">priority + process</td>
+                <td class="empty-td empty-td-back"></td>
+                <td class="meaning-text">a common aspect</td>
+                <td class="meaning-text">a process</td>
+                <td class="meaning-text">priority</td>
+                <td class="meaning-text">priority + process</td>
             </tr>
             <tr>
-                <td class="empty-td empty-border-bottom"></td>
+                <td class="empty-td empty-td-back empty-border-bottom"></td>
                 <td>When?</td>
                 <td>At what time?</td>
                 <td>By what time?</td>
@@ -67,7 +111,7 @@
 
             <tr>
                 <td class="cursive-text border-delete">Period of time</td>
-                <td class="empty-td"></td>
+                <td class="empty-td empty-td-back"></td>
                 <td class="cursive-text">usually, often, always, seldom, every day (week, month, year)</td>
                 <td class="cursive-text">now, at the moment</td>
                 <td class="cursive-text">ever, never, just, already, not..yet, by 3p.m.</td>
@@ -77,21 +121,21 @@
 
             <tr>
                 <td rowspan="3">Present</td>
-                <td>+</td>
+                <td class="empty-td-back">+</td>
                 <td><b>V</b>/<b>V</b>s</td>
                 <td>am/is/are + <b>V</b>ing</td>
                 <td>have/has + <b>V</b>ed/<b>V</b><sub>3</sub></td>
                 <td>have/has + been + <b>V</b>ing</td>
             </tr>
             <tr>
-                <td>?</td>
+                <td class="empty-td-back">?</td>
                 <td>do/does + <b>V</b></td>
                 <td>inversion</td>
                 <td>inversion</td>
                 <td>inversion</td>
             </tr>
             <tr>
-                <td>-</td>
+                <td class="empty-td-back">-</td>
                 <td>do/does + not + <b>V</b></td>
                 <td>am/is/are + not + <b>V</b>ing</td>
                 <td>have/has + not + <b>V</b>ed/<b>V</b><sub>3</sub></td>
@@ -101,31 +145,31 @@
 
             <tr>
                 <td class="cursive-text border-delete">Period of time</td>
-                <td class="empty-td"></td>
+                <td class="empty-td empty-td-back"></td>
                 <td class="cursive-text">yesterday, last week (month, year), long ago</td>
                 <td class="cursive-text">yesterday at 3p.m., yesterday from 6 till 7, when you came</td>
                 <td class="cursive-text">yesterday by 3p.m., before some time in the past</td>
-                <td class="cursive-text">yesterady since 3p.m., for some time in the past</td>
+                <td class="cursive-text">yesterday since 3p.m., for some time in the past</td>
             </tr>
 
 
             <tr>
                 <td rowspan="3">Past</td>
-                <td>+</td>
+                <td class="empty-td-back">+</td>
                 <td><b>V</b>ed/<b>V</b><sub>2</sub></td>
                 <td>was/were + <b>V</b>ing</td>
                 <td>had + <b>V</b>ed/<b>V</b><sub>3</sub></td>
                 <td>had + been + <b>V</b>ing</td>
             </tr>
             <tr>
-                <td>?</td>
+                <td class="empty-td-back">?</td>
                 <td>did + <b>V</b></td>
                 <td>inversion</td>
                 <td>inversion</td>
                 <td>inversion</td>
             </tr>
             <tr>
-                <td>-</td>
+                <td class="empty-td-back">-</td>
                 <td>did + not + <b>V</b></td>
                 <td>was/were + not + <b>V</b>ing</td>
                 <td>had + not + <b>V</b>ed/<b>V</b><sub>3</sub></td>
@@ -135,11 +179,35 @@
 
             <tr>
                 <td class="cursive-text border-delete">Period of time</td>
-                <td class="empty-td"></td>
-                <td class="cursive-text">yesterday, last week (month, year), long ago</td>
-                <td class="cursive-text">yesterday at 3p.m., yesterday from 6 till 7, when you came</td>
-                <td class="cursive-text">yesterday by 3p.m., before some time in the past</td>
-                <td class="cursive-text">yesterady since 3p.m., for some time in the past</td>
+                <td class="empty-td empty-td-back"></td>
+                <td class="cursive-text">tomorrow, next week (month, year)</td>
+                <td class="cursive-text">tomorrow at 3p.m., tomorrow from 6 till 7, when you come</td>
+                <td class="cursive-text">tomorrow by 3p.m., before some time in the future</td>
+                <td class="cursive-text">tomorrow since 3p.m., for some time in the future</td>
+            </tr>
+
+
+            <tr>
+                <td rowspan="3">Future</td>
+                <td class="empty-td-back">+</td>
+                <td>will + <b>V</b>></td>
+                <td>will + be + <b>V</b>ing</td>
+                <td>will + have + <b>V</b>ed/<b>V</b><sub>3</sub></td>
+                <td>will + have + been + <b>V</b>ing</td>
+            </tr>
+            <tr>
+                <td class="empty-td-back">?</td>
+                <td>inversion</td>
+                <td>inversion</td>
+                <td>inversion</td>
+                <td>inversion</td>
+            </tr>
+            <tr>
+                <td class="empty-td-back">-</td>
+                <td>won't + <b>V</b></td>
+                <td>won't + be + <b>V</b>ing</td>
+                <td>won't + have + <b>V</b>ed/<b>V</b><sub>3</sub></td>
+                <td>won't + have + been + <b>V</b>ing</td>
             </tr>
         </tbody>
     </table>
