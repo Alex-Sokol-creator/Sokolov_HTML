@@ -11,19 +11,25 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        *{
+        * {
             text-align: center;
             font-size: large;
         }
 
-        th{
+        th {
             text-transform: uppercase;
-
+            padding: 20px;
         }
 
-        .cursive-text{
+        .cursive-text {
             font-style: italic;
             text-align: left;
+            font-size: medium;
+        }
+
+        .meaning-text {
+            font-style: italic;
+            text-align: center;
         }
 
         .empty-td {
@@ -48,24 +54,41 @@
             border-collapse: collapse;
         }
 
+        sub {
+            font-size: small;
+        }
 
-        #Aspect, .empty-td-back{
+        b {
+            font-weight: normal;
+            font-size: x-large;
+        }
+
+        strong{
+            font-weight: 500;
+        }
+
+        #period{
+            font-size: small;
+        }
+
+        #Aspect,
+        .empty-td-back {
             background-color: rgba(255, 217, 0, 0.336);
         }
 
-        #Simple{
+        #Simple {
             background-color: rgba(48, 107, 184, 0.425);
         }
 
-        #Progressive{
+        #Progressive {
             background-color: rgba(240, 51, 114, 0.452);
         }
 
-        #Perfect{
+        #Perfect {
             background-color: rgba(10, 236, 161, 0.445);
         }
 
-        #Perfect-Progressive{
+        #Perfect-Progressive {
             background-color: rgba(255, 165, 180, 0.651);
         }
     </style>
@@ -74,12 +97,12 @@
 <body>
     <table>
         <colgroup>
-        <col id="Aspect">
-        <col>
-        <col id="Simple">
-        <col id="Progressive">
-        <col id="Perfect">
-        <col id="Perfect-Progressive">
+            <col id="Aspect">
+            <col>
+            <col id="Simple">
+            <col id="Progressive">
+            <col id="Perfect">
+            <col id="Perfect-Progressive">
         </colgroup>
         <thead>
             <tr id="headlines">
@@ -102,20 +125,20 @@
             </tr>
             <tr>
                 <td class="empty-td empty-td-back empty-border-bottom"></td>
-                <td>When?</td>
-                <td>At what time?</td>
-                <td>By what time?</td>
-                <td>Since what time?<br>How long?</td>
+                <td><strong>When?</strong></td>
+                <td><strong>At what time?</strong></td>
+                <td><strong>By what time?</strong></td>
+                <td><strong>Since what time?<br>How long?</strong></td>
             </tr>
 
 
             <tr>
-                <td class="cursive-text border-delete">Period of time</td>
+                <td class="cursive-text border-delete" id="period"><strong>Period of time</strong></td>
                 <td class="empty-td empty-td-back"></td>
-                <td class="cursive-text">usually, often, always, seldom, every day (week, month, year)</td>
+                <td class="cursive-text">usually, often, always, seldom,<br> every day (week, month, year)</td>
                 <td class="cursive-text">now, at the moment</td>
-                <td class="cursive-text">ever, never, just, already, not..yet, by 3p.m.</td>
-                <td class="cursive-text">since 3p.m., for a long time, for a month</td>
+                <td class="cursive-text">ever, never, just, already,<br> not..yet, by 3p.m.</td>
+                <td class="cursive-text">since 3p.m., for a long time,<br> for a month</td>
             </tr>
 
 
@@ -144,12 +167,12 @@
 
 
             <tr>
-                <td class="cursive-text border-delete">Period of time</td>
+                <td class="cursive-text border-delete" id="period"><strong>Period of time</strong></td>
                 <td class="empty-td empty-td-back"></td>
-                <td class="cursive-text">yesterday, last week (month, year), long ago</td>
-                <td class="cursive-text">yesterday at 3p.m., yesterday from 6 till 7, when you came</td>
-                <td class="cursive-text">yesterday by 3p.m., before some time in the past</td>
-                <td class="cursive-text">yesterday since 3p.m., for some time in the past</td>
+                <td class="cursive-text">yesterday, last week (month,<br> year), long ago</td>
+                <td class="cursive-text">yesterday at 3p.m., yesterday<br> from 6 till 7, when you came</td>
+                <td class="cursive-text">yesterday by 3p.m., before<br> some time in the past</td>
+                <td class="cursive-text">yesterday since 3p.m., for<br> some time in the past</td>
             </tr>
 
 
@@ -178,12 +201,12 @@
 
 
             <tr>
-                <td class="cursive-text border-delete">Period of time</td>
+                <td class="cursive-text border-delete" id="period"><strong>Period of time</strong></td>
                 <td class="empty-td empty-td-back"></td>
-                <td class="cursive-text">tomorrow, next week (month, year)</td>
-                <td class="cursive-text">tomorrow at 3p.m., tomorrow from 6 till 7, when you come</td>
-                <td class="cursive-text">tomorrow by 3p.m., before some time in the future</td>
-                <td class="cursive-text">tomorrow since 3p.m., for some time in the future</td>
+                <td class="cursive-text">tomorrow, next week (month,<br> year)</td>
+                <td class="cursive-text">tomorrow at 3p.m., tomorrow<br> from 6 till 7, when you come</td>
+                <td class="cursive-text">tomorrow by 3p.m., before<br> some time in the future</td>
+                <td class="cursive-text">tomorrow since 3p.m., for<br> some time in the future</td>
             </tr>
 
 
