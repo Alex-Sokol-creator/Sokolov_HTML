@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float-demo</title>
     <style>
-        .float-example{
+        .float-example {
             width: 100px;
             height: auto;
             border: solid black 3px;
@@ -14,35 +14,93 @@
             margin-right: 5px;
 
             /* float: left; */
-            float: right;
+            float: left;
         }
 
-        img{
+        img {
             margin: auto;
             width: 90px;
             height: auto;
             border-radius: 15px;
+
+        }
+
+        .float-clear {
+            /* clear: both; */
+            overflow: auto;
+        }
+
+        .article {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .clearfix:before{
+            content: "";
+            clear: both;
         }
     </style>
 </head>
 
 <body>
-    <div class="float-example">
-        <img src="../../Shared_Resources/Catnap.png" alt="Catnap">
+    <div class="article float-clear">
+        <div class="float-example float-clear">
+            <img src="../../Shared_Resources/Catnap.png" alt="Catnap">
+        </div>
+
+        <!--lorem 150-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo error quia laboriosam modi,
+            explicabo
+            quod consequatur quos similique hic consequuntur impedit provident, cumque reiciendis. Reiciendis omnis
+            corrupti
+            dolor nesciunt suscipit repellat sequi neque dolores adipisci modi aspernatur minima saepe laborum provident
+            fugiat, at ipsa quis. Quos nam, reiciendis impedit ad maxime optio odit, neque necessitatibus obcaecati
+            porro
+            repudiandae libero perspiciatis quia aut voluptates expedita natus quasi totam. Velit necessitatibus nemo
+            numquam, incidunt similique dolorum neque harum esse quod quos fugiat dolore, nobis rem deserunt, quae omnis
+            cupiditate veniam exercitationem vero enim praesentium alias debitis! Sapiente et quo velit in unde soluta
+            quisquam, ad nulla alias enim non dolores porro doloremque odio, saepe necessitatibus totam voluptatem illum
+            nam? Ipsum, necessitatibus cumque? Fugit distinctio illum odio vitae quae! Impedit at voluptatum dolor
+            tenetur
+            recusandae nemo iste quae neque omnis ullam! Inventore vero, ipsum explicabo quidem unde iste molestias
+            blanditiis voluptatum id.
+        </p>
     </div>
 
-    <!--lorem 150-->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab eaque praesentium ea ipsam enim maxime facilis
-        dolores. Fugit nihil assumenda necessitatibus nobis omnis doloremque ab neque optio nemo voluptatem, nulla,
-        nostrum eaque blanditiis unde magni, impedit natus sed explicabo non! Asperiores voluptatibus magnam in
-        temporibus molestiae dolorem ratione veniam tempore quibusdam, fuga est obcaecati odit commodi, cumque
-        voluptates error eligendi. Perferendis nihil, assumenda sit aut incidunt beatae deleniti explicabo, aperiam
-        inventore esse, commodi atque? Debitis eius id amet necessitatibus rerum, saepe dolorem libero. Adipisci unde
-        magni saepe impedit, tempora necessitatibus debitis laudantium libero dicta distinctio perferendis excepturi,
-        iusto voluptas molestias! Nihil culpa itaque, temporibus sit omnis quam libero asperiores, quasi corrupti quis
-        distinctio. Illum vel fugit nulla voluptates harum dolorem odit libero id quos culpa? Quae omnis quasi a ullam
-        delectus maxime sint libero saepe minima nulla modi, magnam ea. Eligendi iste repellendus sapiente quaerat
-        quidem deleniti. Maiores, voluptates dicta.</p>
+    <!-- <hr style="clear: both;"> -->
+
+    <div class="article clearfix">
+        <div class="float-example float-clear">
+            <img src="../../Shared_Resources/Catnap.png" alt="Catnap">
+        </div>
+
+        <!--lorem 150-->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio saepe facere voluptatum, nulla natus
+            ipsa pariatur modi iure eos dolorem, sit ea iusto, odit maiores ratione dolore autem molestias corporis
+            necessitatibus? A laboriosam, explicabo odit ipsum quo soluta aspernatur sed eaque blanditiis voluptates
+            beatae quasi provident commodi corporis dolores et vitae debitis quas adipisci saepe dolor. Odit a magnam
+            est, explicabo ratione iure soluta eaque nulla libero officiis accusamus minus blanditiis alias qui minima
+            praesentium. Nostrum, eaque eveniet. At distinctio ad officiis, officia nostrum similique incidunt
+            doloremque. Voluptates, fuga. Minima, quos veniam iste assumenda vero et sunt quae nostrum doloremque ad
+            itaque, exercitationem cupiditate inventore reprehenderit? Itaque voluptates architecto optio. Voluptate
+            quam, qui provident similique aut corrupti deserunt corporis dolor quo tempore, recusandae dignissimos
+            ipsam, officiis minus quae sequi exercitationem sint repudiandae assumenda illum? Omnis sapiente deleniti
+            saepe eos sunt consequatur libero impedit quaerat consequuntur et! Provident deserunt ea cupiditate rem nam
+            quisquam, consequatur soluta alias illum nulla tenetur commodi. Ab labore voluptatibus nostrum quos,
+            accusantium eos necessitatibus at facilis aspernatur. Rem quod blanditiis mollitia nesciunt molestiae.
+            Voluptates ipsa minima neque repellat ducimus! Dolorem excepturi doloribus, aspernatur fuga repellat, iusto
+            a porro dolore earum necessitatibus alias odit cumque ad neque perferendis, expedita atque ipsum repudiandae
+            impedit officia laudantium? Quos rem corporis tenetur? Aspernatur, cum, facere unde ut voluptates quo, saepe
+            sapiente ipsa iste modi rem labore explicabo ea nostrum iusto tenetur commodi! Mollitia error ducimus libero
+            ut odit debitis deleniti consequatur minima omnis, nemo cupiditate laborum quibusdam sit aliquid neque optio
+            voluptates cumque sunt aspernatur, fugit a nobis autem odio. Inventore exercitationem libero ipsam repellat
+            iusto numquam aliquam placeat sapiente magni ab qui suscipit, ea nostrum. Est, nemo excepturi harum enim
+            pariatur cumque neque molestiae totam quia blanditiis. Deleniti fugiat beatae ex, maxime accusamus deserunt
+            aliquid quam hic odio. Labore!</p>
+    </div>
+
 </body>
 
 </html>
