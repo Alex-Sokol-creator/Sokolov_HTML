@@ -22,6 +22,19 @@
             padding: 18px 30px;
         }
 
+        #bold-shakespeare {
+            font-weight: bold;
+            float: left;
+        }
+
+        #info-right {
+            float: right;
+        }
+
+        #Parents {
+            margin-top: 30px;
+        }
+
         #menu {
             background-color: rgb(182, 11, 11);
             color: whitesmoke;
@@ -43,13 +56,13 @@
             overflow: hidden;
         }
 
-        #text{
+        #text {
             float: left;
             max-width: 660px;
             font-size: large;
         }
 
-        #Shakespeare-block{
+        #Shakespeare-block {
             background-color: rgb(228, 228, 228);
             float: right;
             margin: 5px;
@@ -58,9 +71,17 @@
             overflow: hidden;
         }
 
-        #Shakespeare-img{
+        #Shakespeare-block div {
+            overflow: hidden;
+        }
+
+        #Shakespeare-img {
             width: 270px;
             height: auto;
+        }
+
+        #footer {
+            clear: both;
         }
     </style>
 </head>
@@ -114,21 +135,55 @@
             <img id="Shakespeare-img" src="Images of people/William_Shakespeare_by_John_Taylor,_edited.jpg"
                 alt="William_Shakespeare">
             <div>
-                <p class="bold-shakespeare">Born</p>
-                <p>26 April 1564</p>
-                <p class="bold-shakespeare">Died</p>
-                <p>23 April 1616</p>
-                <p class="bold-shakespeare">Spouse</p>
-                <p>Anne Hathaway (m. 1582)</p>
-                <p class="bold-shakespeare">Children</p>
-                <div id="children">
+                <div id="bold-shakespeare">
+                    <p>Born</p>
+                    <p>Died</p>
+                    <p>Spouse</p>
+                    <p>Children</p>
+                    <br>
+                    <br>
+                    <p id="Parents">Parents</p>
+                </div>
+                <div id="info-right">
+                    <p>26 April 1564</p>
+                    <p>23 April 1616</p>
+                    <p>Anne Hathaway (m. 1582)</p>
                     <p>Susanna Hall</p>
                     <p>Hamnet Shakespeare</p>
                     <p>Judith Quiney</p>
+                    <p>John Shakespeare (father)</p>
+                    <p>Mary Arden (mother)</p>
+                </div>
+                <div>
                 </div>
             </div>
         </div>
-    </div>
+        <div id="footer">
+            <div>
+                <img src="Images of people/Anne_Hathaway.jpg" alt="Anne_Hathaway">
+                <p>Anne Hathaway</p>
+            </div>
+            <div>
+                <img src="Images of people/Dickens_Gurney.jpg" alt="Dickens">
+                <p>Charles Dickens</p>
+            </div>
+            <div>
+                <img src="Images of people/Oscar_Wilde_Sarony.jpg" alt="Oscar Wilde">
+                <p>Oscar Wilde</p>
+            </div>
+            <div>
+                <img src="Images of people/Cervantes_Jauregui.jpg" alt="Cervantes">
+                <p>Miguel de<br>Cervantes</p>
+            </div>
+            <div>
+                <img src="Images of people/Edgar_Allan_Poe.jpg" alt="Edgar Poe">
+                <p>Edgar Allan Poe</p>
+            </div>
+            <div>
+                <img src="Images of people/WilliamWordsworth.jpg" alt="William Wordsworth">
+                <p>William<br>Wordsworth</p>
+            </div>
+        </div>
 
 
 </body>
