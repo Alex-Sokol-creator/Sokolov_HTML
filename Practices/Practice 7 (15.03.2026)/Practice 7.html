@@ -4,8 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 7</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table,th,td{
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+        }
+
+        table{
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th{
+            color: white;
+            font-size: large;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        thead tr th p{
+            font-size: xx-large;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+
+        th:first-child{
+            background-color: rgb(123, 123, 204);
+            padding: 0 35px;
+        }
+        th:nth-child(2){
+            background-color: rgb(100, 100, 175);
+        }
+        th:nth-child(3){
+            background-color: rgb(86, 86, 151);
+        }
+        th:nth-child(4){
+            background-color: rgb(69, 69, 121);
+        }
+        th:last-child{
+            background-color: rgb(48, 48, 85);
+        }
+
+        tbody tr:nth-child(odd) td:nth-child(odd){
+            background-color: rgb(232, 232, 232);
+        }
+        
+        tbody tr:nth-child(odd) td:nth-child(even){
+            background-color: rgb(245, 245, 245);
+        }
+
+        tbody tr:nth-child(even) td:nth-child(odd){
+            background-color: rgb(245, 245, 245);
+        }
+
+        tbody tr:nth-child(even) td:nth-child(even){
+            background-color: white;
+        }
+
+        tbody tr td{
+            text-align: center;
+            padding: 10px;
+        }
+
+        tbody tr td:first-child{
+            text-align: left;
+            padding: 15px 65px;
+            padding-left: 15px;
+        }
+
+        tbody tr:last-child td p{
+            background-color: rgb(219, 219, 219);
+            color: rgb(126, 126, 126);
+            border: 1px solid rgb(173, 173, 173);
+            padding: 10px 5px;
+            text-transform: uppercase;
+            font-weight: 650;
+        }
+
+        tbody tr:last-child td:not(:first-child){
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <thead>
+            <tr>
+                <th>Choose your plan</th>
+                <th>Starter<p>$10</p>per month</th>
+                <th>Econom<p>$30</p>per month</th>
+                <th>Standart<p>$59</p>per month</th>
+                <th>Professional<p>$99</p>per month</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Amount of space</td>
+                <td>20GB</td>
+                <td>40GB</td>
+                <td>110GB</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>Bandwidth per month</td>
+                <td>120GB</td>
+                <td>240GB</td>
+                <td>610GB</td>
+                <td>1300GB</td>
+            </tr>
+            <tr>
+                <td>Email accounts</td>
+                <td>1</td>
+                <td>15</td>
+                <td>60</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>MySQL databases</td>
+                <td>1</td>
+                <td>15</td>
+                <td>60</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>25h support</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Support tickets per month</td>
+                <td>2</td>
+                <td>6</td>
+                <td>14</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><p>Start</p></td>
+                <td><p>Start</p></td>
+                <td><p>Start</p></td>
+                <td><p>Start</p></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
