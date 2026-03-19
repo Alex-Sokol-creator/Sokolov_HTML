@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7</title>
+    <style>
+        body{
+            background-color: rgb(238, 238, 238);
+        }
+
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .blocks{
+            text-align: center;
+            background-color: white;
+            width: 240px;
+            height: 380px;
+            position: fixed;
+        }
+
+        .blocks div{
+            margin: auto;
+        }
+
+        .blocks p:not(.per-month){
+            color: black;
+            font-weight: bold;
+        }
+
+        /* .blocks p:nth-of-type(1){
+            text-transform: uppercase;
+            font-size: large;
+        }
+
+        .blocks p:nth-of-type(2){
+            font-size: x-large;
+        }
+
+        .blocks p:nth-of-type(3){
+            font-size: large;
+            color: rgb(235, 235, 235);
+        }       */
+        
+        .topic{
+            text-transform: uppercase;
+            font-size: large;
+        }
+
+        .price{
+            font-size: xx-large;
+        }
+
+        .per-month{
+            font-size: large;
+            color: rgb(194, 189, 189);
+        }
+    </style>
+</head>
+<body>
+    <div id="list-of-divs">
+        <div class="blocks" id="red-block">
+            <p class="topic">Enterprise</p>
+            <hr>
+            <p class="price">$69</p>
+            <p class="per-month">per month</p>
+            <div>
+                <p>10GB disk place</p>
+                <p>100GB monthly bandwidth</p>
+                <p>20 email accounts</p>
+                <p>Unlimited subdomens</p>
+            </div>
+            <div>
+                <p>Buy</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
