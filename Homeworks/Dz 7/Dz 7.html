@@ -20,11 +20,35 @@
             width: 260px;
             height: auto;
             position: fixed;
-            top: 100px;
-            left: 100px;
             border: 1px solid rgb(143, 142, 142);
             border-radius: 12px;
             box-shadow: 0 0 15px rgb(122, 122, 122);
+            transition: all 1s ease 0s;
+            z-index: 0.1;
+        }
+
+        #red-block:hover{
+            width: 320px;
+            left: 70px;
+            z-index: 1;
+        }
+
+        #yellow-block:hover{
+            width: 320px;
+            left: 360px;
+            z-index: 1;
+        }
+
+        #blue-block:hover{
+            width: 320px;
+            left: 650px;
+            z-index: 1;
+        }
+
+        #green-block:hover{
+            width: 320px;
+            left: 940px;
+            z-index: 1;
         }
 
         /* .blocks div{
@@ -52,16 +76,18 @@
         
         .topic{
             text-transform: uppercase;
-            font-size: large;
+            font-size: 20px;
+            margin: 12px auto;
+            margin-top: 24px;
         }
 
         .price{
-            font-size: xx-large;
-            margin-bottom: 2px;
+            font-size: 48px;
+            margin: 5px auto;
         }
 
         .per-month{
-            font-size: large;
+            font-size: 20px;
             color: rgba(194, 189, 189, 0.651);
             font-weight: bold;
             margin-top: 0;
@@ -84,8 +110,40 @@
             font-weight: 400;
         }
 
+        #red-block{
+            top: 100px;
+            left: 100px;
+        }
+
+        #yellow-block{
+            top: 100px;
+            left: 390px;
+        }
+
+        #blue-block{
+            top: 100px;
+            left: 680px;
+        }
+
+        #green-block{
+            top: 100px;
+            left: 970px;
+        }
+
         #red-block .buttons{
             background-color: rgb(211, 29, 75);
+        }
+
+        #yellow-block .buttons{
+            background-color: rgb(216, 196, 20);
+        }
+
+        #blue-block .buttons{
+            background-color: rgb(26, 43, 192);
+        }
+
+        #green-block .buttons{
+            background-color: rgb(60, 187, 22);
         }
 
         hr{
@@ -94,6 +152,18 @@
 
         #red-block hr{
             background-color: rgb(190, 26, 67);
+        }
+
+        #yellow-block hr{
+            background-color: rgb(216, 187, 21);
+        }
+
+        #blue-block hr{
+            background-color: rgb(23, 32, 160);
+        }
+
+        #green-block hr{
+            background-color: rgb(24, 153, 42);
         }
     </style>
 </head>
@@ -108,6 +178,51 @@
                 <p>10GB disk place</p>
                 <p>100GB monthly bandwidth</p>
                 <p>20 email accounts</p>
+                <p>Unlimited subdomens</p>
+            </div>
+            <div class="buttons">
+                <p>Buy</p>
+            </div>
+        </div>
+        <div class="blocks" id="yellow-block">
+            <p class="topic">Professional</p>
+            <hr>
+            <p class="price">$29</p>
+            <p class="per-month">per month</p>
+            <div>
+                <p>5GB disk place</p>
+                <p>60GB monthly bandwidth</p>
+                <p>10 email accounts</p>
+                <p>Unlimited subdomens</p>
+            </div>
+            <div class="buttons">
+                <p>Buy</p>
+            </div>
+        </div>
+        <div class="blocks" id="blue-block">
+            <p class="topic">Standart</p>
+            <hr>
+            <p class="price">$19</p>
+            <p class="per-month">per month</p>
+            <div>
+                <p>3GB disk place</p>
+                <p>30GB monthly bandwidth</p>
+                <p>5 email accounts</p>
+                <p>Unlimited subdomens</p>
+            </div>
+            <div class="buttons">
+                <p>Buy</p>
+            </div>
+        </div>
+        <div class="blocks" id="green-block">
+            <p class="topic">Basic</p>
+            <hr>
+            <p class="price">$9</p>
+            <p class="per-month">per month</p>
+            <div>
+                <p>1GB disk place</p>
+                <p>10GB monthly bandwidth</p>
+                <p>2 email accounts</p>
                 <p>Unlimited subdomens</p>
             </div>
             <div class="buttons">
