@@ -17,14 +17,19 @@
         .blocks{
             text-align: center;
             background-color: white;
-            width: 220px;
-            height: 360px;
+            width: 260px;
+            height: auto;
             position: fixed;
+            top: 100px;
+            left: 100px;
+            border: 1px solid rgb(143, 142, 142);
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgb(122, 122, 122);
         }
 
-        .blocks div{
+        /* .blocks div{
             margin: auto;
-        }
+        } */
 
         .blocks p:not(.per-month){
             color: black;
@@ -52,11 +57,43 @@
 
         .price{
             font-size: xx-large;
+            margin-bottom: 2px;
         }
 
         .per-month{
             font-size: large;
-            color: rgb(194, 189, 189);
+            color: rgba(194, 189, 189, 0.651);
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .buttons{
+           text-align: center;
+           text-transform: uppercase;
+           width: 100px;
+           padding: 2px;
+           margin: 25px auto;
+           margin-top: 35px;
+           border-radius: 8px;
+        }
+
+        .blocks .buttons p{
+            color: white;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+
+        #red-block .buttons{
+            background-color: rgb(211, 29, 75);
+        }
+
+        hr{
+            height: 4px;
+        }
+
+        #red-block hr{
+            background-color: rgb(190, 26, 67);
         }
     </style>
 </head>
@@ -73,7 +110,7 @@
                 <p>20 email accounts</p>
                 <p>Unlimited subdomens</p>
             </div>
-            <div>
+            <div class="buttons">
                 <p>Buy</p>
             </div>
         </div>
