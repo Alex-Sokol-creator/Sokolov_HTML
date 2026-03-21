@@ -6,19 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 8</title>
     <style>
+        body {
+            background-color: whitesmoke;
+            padding: 15px;
+        }
 
+        a {
+            text-decoration: none;
+        }
+
+        .buttons {
+            width: 100px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 5px;
+        }
+
+        .list-of-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: baseline;
+            flex-shrink: 0;
+        }
+
+        .list-of-links a div p {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 20px;
+        }
+
+        .list-of-links a div{
+            transition: all 0.3s ease 0s;
+        }
+
+        .information {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 50px;
+            padding: 40px 25px;
+            padding-bottom: 20px;
+            background-color: rgb(110, 110, 110);
+        }
+
+        #main-div {
+            display: flex;
+            align-items: flex-start;
+            width: 80%;
+        }
+
+        #Tab1 {
+            background-color: rgb(110, 110, 110);
+        }
+
+        #Tab2 {
+            background-color: rgb(150, 150, 150);
+            border-top: 1px solid rgb(182, 182, 182);
+            border-bottom: 1px solid rgb(182, 182, 182);
+        }
+
+        #Tab3 {
+            background-color: rgb(150, 150, 150);
+            border-top: 1px solid rgb(182, 182, 182);
+            border-bottom: 1px solid rgb(182, 182, 182);
+        }
+
+        #Tab2:hover{
+            background-color: rgb(110, 110, 110);
+            border: none;
+        }
+
+        #Tab3:hover{
+            background-color: rgb(110, 110, 110);
+            border: none;
+        }
+
+        .list-of-links:hover #Tab1{
+            background-color: rgb(150, 150, 150);
+            border-top: 1px solid rgb(182, 182, 182);
+            border-bottom: 1px solid rgb(182, 182, 182);
+        }
+
+        .blocks {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: calc(30%);
+            box-sizing: border-box;
+        }
+
+        .blocks h2 {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 0;
+        }
+
+        .blocks p {
+            color: rgb(233, 233, 233);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .blocks img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
 <body>
-    <div class="list-of-links">
-        <a href="#Tab1">
-            <div class="buttons">
-                
+    <div id="main-div">
+        <div class="list-of-links">
+            <a href="#Tab1">
+                <div class="buttons" id="Tab1">
+                    <p>Tab 1</p>
+                </div>
+            </a>
+            <a href="#Tab2">
+                <div class="buttons" id="Tab2">
+                    <p>Tab 2</p>
+                </div>
+            </a>
+            <a href="#Tab3">
+                <div class="buttons" id="Tab3">
+                    <p>Tab 3</p>
+                </div>
+            </a>
+        </div>
+        <div class="information">
+            <div class="blocks" id="block1">
+                <img src="../Practice 8/350x220.png" alt="picture1">
+                <h2>Header 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, adipisci doloremque. Ipsam,
+                    veritatis, veniam, qui eaque maiores dolores voluptate unde accusantium officiis eum molestias.
+                    Suscipit.</p>
             </div>
-        </a>
+            <div class="blocks" id="block2">
+                <img src="../Practice 8/350x220.png" alt="picture2">
+                <h2>Header 2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste nobis, nemo minima optio
+                    maiores nulla obcaecati voluptas nam quaerat necessitatibus deleniti corrupti, dolorem ab! Culpa
+                    earum incidunt explicabo veritatis eum vitae, eaque deleniti, architecto iure, a consequuntur
+                    facilis aspernatur?
+                </p>
+            </div>
+            <div class="blocks" id="block3">
+                <img src="../Practice 8/350x220.png" alt="picture3">
+                <h2>Header 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id error impedit minima quisquam
+                    officiis laborum eaque officia sint vel. At tenetur, mollitia itaque beatae aut sit dolorem
+                    laboriosam eligendi.</p>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
