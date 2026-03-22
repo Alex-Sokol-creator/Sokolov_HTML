@@ -8,28 +8,107 @@
     <style>
         body {
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
         }
 
         .position-demo {
-            background-color: rgb(15, 145, 80);
-            color: aliceblue;
-            /* width: 180px;
-            height: 25px; */
+            /* width: 180px; */
+            /* height: 25px; */
             /* padding-top: 20px; */
-            text-align: center;
-            margin: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 30px;
         }
 
-        p{
-            margin: auto;
+        .blocks {
+            position: relative;
+            background-color: rgb(53, 167, 110);
+            color: aliceblue;
+            padding: 15px 0;
+            width: 160px;
+            border-right: 1px solid rgb(41, 131, 86);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease 0s;
+        }
+
+        .blocks:hover {
+            background-color: rgb(41, 131, 86);
+        }
+
+        .blocks:last-child {
+            border: none;
+        }
+
+        .blocks p {
+            margin: 0;
+        }
+
+        .categ-menu {
+            /* display: none; */
+            background-color: rgb(53, 167, 110);
+            color: aliceblue;
+            padding: 15px 0;
+            width: 160px;
+            border: 1px solid rgb(41, 131, 86);
+            position: absolute;
+            top: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease 0s;
+        }
+
+        .menu-elem{
+            margin: 10px 0;
         }
     </style>
 </head>
 
 <body>
     <div class="position-demo">
-        <p>Home</p>
+        <div class="blocks">
+            <p>Home</p>
+        </div>
+        <div class="blocks">
+            <p>Categories</p>
+            <div class="categ-menu">
+                <div class="menu-elem">
+                    <p>Man</p>
+                </div>
+                <div class="menu-elem">
+                    <p>Woomen</p>
+                </div>
+                <div class="menu-elem">
+                    <p>Kids</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blocks">
+            <p>About</p>
+        </div>
+        <div class="blocks">
+            <p>Contacts</p>
+        </div>
     </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus veniam atque voluptas debitis vitae,
+        sunt explicabo amet quibusdam asperiores fuga suscipit alias facere aut est provident consequatur exercitationem
+        officia consequuntur deserunt. Mollitia magni inventore nam maxime adipisci alias enim ab aspernatur quas nihil
+        soluta, quasi amet repudiandae praesentium! Omnis quibusdam nisi, dolorem quisquam quas ipsam! Provident
+        deleniti tempora corrupti inventore repellendus magnam saepe corporis molestias, adipisci neque repudiandae odit
+        quis impedit sequi nobis enim minus consequatur consequuntur molestiae eos. Ea quis accusantium ipsum velit
+        minus iure architecto corporis iusto animi ab numquam sunt provident, dolor libero commodi illo, sequi quo
+        aliquid fugit? Optio ea cupiditate quos aspernatur ipsa quo iste temporibus recusandae delectus molestias odio
+        repellat fuga unde, totam nostrum itaque accusamus autem sit beatae iusto esse illum maiores. Eveniet suscipit,
+        deserunt explicabo doloremque rerum, eius, magnam amet pariatur ex sit aperiam neque aspernatur quae officiis
+        nam commodi dolorum.
+    </p>
 </body>
 
 </html>
