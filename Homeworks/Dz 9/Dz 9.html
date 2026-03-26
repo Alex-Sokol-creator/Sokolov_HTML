@@ -10,23 +10,57 @@
             background-color: lightgray;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         header {
             background-color: rgb(53, 53, 53);
             display: flex;
-            justify-content: flex-start;
+            /* justify-content: center; */
             align-items: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: whitesmoke;
             gap: 4%;
+            padding-left: 40px;
         }
 
-        header div{
+        header div {
             padding: 10px;
         }
 
-        .name{
+        main,
+        .Events,
+        .citata {
+            background-color: whitesmoke;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            min-width: 600px;
+        }
+
+        main h1,
+        main p {
+            padding: 0 40px;
+            padding-right: 80px;
+        }
+
+        main p{
+            font-size: large;
+        }
+
+        main h1 {
+            margin-bottom: 0;
+            margin-top: 40px;
+        }
+
+        .date{
+            color: rgb(201, 201, 201);
+        }
+
+        .name {
             font-weight: bold;
             display: flex;
             justify-content: center;
@@ -34,7 +68,7 @@
             font-size: 1.2em;
         }
 
-        .header-divs{
+        .header-divs {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,16 +76,50 @@
             gap: 40px;
         }
 
-        .main-div{
+        .main-div {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             gap: 50px;
+            margin-top: 50px;
+            padding: 0 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-        .Events div img{
-            width: 60px;
+        .Events {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .Events div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 25px;
+            margin: 10px 15px;
+        }
+
+        .Events div img {
+            width: 50px;
             height: auto;
+        }
+
+        aside {
+            max-width: 450px;
+            min-width: 320px;
+        }
+
+        #first-p-events {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px 15px;
+            margin-top: 20px;
+        }
+
+        .citata{
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 17px;
         }
     </style>
 </head>
@@ -70,56 +138,53 @@
     <div class="main-div">
         <main>
             <h1>What is Lorem Ipsum?</h1>
-            <p>30/05/2019 11:30</p>
+            <p class="date">30/05/2019 11:30</p>
             <img src="Images/html5img.png" alt="html-image">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officia a harum alias minus mollitia ut.
-                Consectetur tempore autem voluptas? Molestias harum cupiditate eius inventore suscipit fuga maiores quo
-                numquam obcaecati, quos esse at recusandae, nihil accusantium molestiae ducimus aspernatur in facilis
-                voluptas sit. Voluptate autem quos quibusdam incidunt voluptatem minima veritatis culpa, illo officia,
-                debitis quam optio quasi aliquam ipsum ducimus blanditiis! Sunt reiciendis minus quaerat doloremque
-                labore
-                provident cumque vero necessitatibus exercitationem, dolorem qui tempora. Molestiae, voluptatibus fuga!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magni voluptas maiores harum, qui
+                doloribus molestias quaerat! Ipsa porro impedit eos perspiciatis ab exercitationem sequi a corrupti?
+                Facere officia illum saepe mollitia quo. Eos ipsa et similique sunt, cum illo fugit aperiam omnis
+                architecto debitis. Impedit deleniti excepturi inventore harum assumenda modi accusantium animi eaque
+                eos reprehenderit, a fuga architecto, aspernatur quo vitae ratione veniam commodi repellendus ipsam
+                dicta laboriosam? Tenetur animi aperiam maxime modi, dolor quos a ipsam totam expedita impedit pariatur,
+                sapiente cum. Recusandae odio maxime architecto, itaque quasi veniam animi assumenda reiciendis
+                perferendis facere. Quam, labore, aliquid quia nihil magnam quos dolorum placeat consequatur laudantium
+                veritatis architecto sequi quibusdam odio velit. Totam dolores delectus, omnis ipsum facilis obcaecati
+                unde, facere dolore fuga, dolorem possimus earum vel doloremque!
             </p>
         </main>
         <aside>
             <div class="Events">
-                <p>Events</p>
+                <p id="first-p-events">Events</p>
                 <div>
                     <img src="Images/calendar_7.png" alt="calendar-7">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum illum, atque
-                        voluptatem
-                        eos ea minus eveniet ad animi quam?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quas quae nisi dolore maiores
+                        eligendi! Totam laborum quo dolore ea.</p>
                 </div>
                 <div>
                     <img src="Images/calendar_19.png" alt="calendar-19">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum illum, atque
-                        voluptatem
-                        eos ea minus eveniet ad animi quam?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quas quae nisi dolore maiores
+                        eligendi! Totam laborum quo dolore ea.</p>
                 </div>
                 <div>
                     <img src="Images/calendar_27.png" alt="calendar-27">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum illum, atque
-                        voluptatem
-                        eos ea minus eveniet ad animi quam?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quas quae nisi dolore maiores
+                        eligendi! Totam laborum quo dolore ea.</p>
                 </div>
                 <div>
                     <img src="Images/calendar_7.png" alt="calendar-7">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum illum, atque
-                        voluptatem
-                        eos ea minus eveniet ad animi quam?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quas quae nisi dolore maiores
+                        eligendi! Totam laborum quo dolore ea.</p>
                 </div>
                 <div>
                     <img src="Images/calendar_19.png" alt="calendar-19">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum illum, atque
-                        voluptatem
-                        eos ea minus eveniet ad animi quam?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quas quae nisi dolore maiores
+                        eligendi! Totam laborum quo dolore ea.</p>
                 </div>
                 <div>
                     <img src="Images/calendar_27.png" alt="calendar-27">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum illum, atque
-                        voluptatem
-                        eos ea minus eveniet ad animi quam?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quas quae nisi dolore maiores
+                        eligendi! Totam laborum quo dolore ea.</p>
                 </div>
             </div>
             <div class="citata">
