@@ -6,94 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3 from Dz 10</title>
     <style>
-        body{
+        body {
             background-color: whitesmoke;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
         }
 
-        .header{
+        .header {
             display: flex;
             justify-content: space-between;
             align-content: center;
             border-bottom: 1px solid black;
             padding: 5px 40px;
+            transition: all 0.5s ease 0s;
         }
 
-        .header-blocks{
+        .header-blocks {
             display: flex;
             align-items: center;
             gap: 10px;
             padding: 5px;
         }
 
-        .header-blocks img{
+        .header-blocks img {
             width: 50px;
         }
 
-        .header-blocks:first-child p{
+        .header-blocks:first-child p {
             text-transform: uppercase;
             font-size: x-large;
         }
 
-        .main-content{
+        .main-content {
             display: flex;
             justify-content: flex-start;
             gap: 45px;
-            margin: 10px 40px;
+            margin: 25px 40px;
             /* font-size: large; */
+            transition: all 0.5s ease 0s;
         }
 
-        .aside{
+        .aside {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
         }
 
-        .aside-blocks{
+        .aside-blocks {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: 10px;
-            padding: 10px;
+            padding: 0 20px;
             width: 220px;
             font-size: large;
+            transition: all 0.5s ease 0s;
         }
 
-        .aside-blocks img{
+        .aside-blocks img {
             width: 40px;
         }
 
-        .letters{
+        .aside-blocks:nth-child(1) {
+            background-color: rgba(241, 175, 175, 0.301);
+        }
+
+        .aside-blocks:nth-child(2):hover,
+        .aside-blocks:nth-child(3):hover,
+        .aside-blocks:nth-child(4):hover {
+            background-color: rgba(241, 175, 175, 0.301);
+        }
+
+        .letters {
             display: grid;
-            grid-template-columns: 40px 250px 1fr 30px 80px;
+            grid-template-columns: 40px 250px 1fr 50px 80px;
             align-items: center;
             border-bottom: 1px solid black;
             padding: 15px 10px;
             font-size: 20px;
         }
 
-        .letters p{
+        .letters p {
             margin: 0;
         }
 
-        .letters img{
+        .letters img {
             width: 18px;
         }
 
-        .letters div:nth-of-type(2){
+        .letters img:nth-of-type(2) {
+            padding-left: 10px;
+        }
+
+        .letters div:nth-of-type(2) {
             display: flex;
             align-items: center;
             white-space: nowrap;
+            gap: 5px;
             overflow: hidden;
-            min-width: 215px;
+            min-width: 180px;
         }
-        
-        .letters div:nth-of-type(2) p{
+
+        .letters div:nth-of-type(2) p {
             color: rgb(133, 133, 133);
         }
-        
+
+        @media screen and (min-width:550px) and (max-width:800px) {
+            .letters {
+                grid-template-columns: 40px minmax(100px,200px) 50px 80px;
+                font-size: medium;
+            }
+
+            .letters img:nth-of-type(1) {
+                grid-row: 1;
+                grid-column: 1;
+            }
+
+            .letters div:nth-of-type(2) {
+                grid-column: 2;
+                grid-row: 2;
+                white-space: normal;
+                display: block;
+            }
+
+            .letters div:nth-of-type(2) div{
+                display: none;
+            }
+
+            .letters div:nth-of-type(1){
+                white-space: nowrap;
+            }
+
+            .letters div:nth-of-type(2) p {
+                grid-column: 2;
+                grid-row: 3;
+                white-space: nowrap;
+            }
+
+            .letters img:nth-of-type(2) {
+                grid-column: 3;
+                grid-row: 1;
+            }
+
+            .letters div:last-of-type {
+                grid-column: 4;
+                grid-row: 1;
+            }
+
+            .aside-blocks {
+                max-width: 170px;
+                font-size: medium;
+            }
+
+            .aside-blocks img {
+                max-width: 40px;
+            }
+        }
+
+        @media screen and (max-width:550px){
+            .header{
+                padding-left: 20px;
+            }
+
+            .main-content{
+                margin-left: 20px;
+            }
+
+            .aside-blocks{
+                max-width: 60px;
+                justify-content: center;
+                padding: 8px 10px;
+            }
+
+            .aside-blocks img {
+                max-width: 34px;
+            }
+
+            .aside-blocks p{
+                display: none;
+            }
+
+            .letters {
+                grid-template-columns: 25px minmax(70px,100px) 50px 80px;
+                font-size: medium;
+            }
+
+            .letters img:nth-of-type(1) {
+                grid-row: 1;
+                grid-column: 1;
+            }
+
+            .letters div:nth-of-type(2) {
+                grid-column: 2;
+                grid-row: 2;
+                white-space: normal;
+                display: block;
+            }
+
+            .letters div:nth-of-type(2) div{
+                display: none;
+            }
+
+            .letters div:nth-of-type(1){
+                white-space: nowrap;
+            }
+
+            .letters div:nth-of-type(2) p {
+                grid-column: 2;
+                grid-row: 3;
+                white-space: nowrap;
+            }
+
+            .letters img:nth-of-type(2) {
+                grid-column: 3;
+                grid-row: 1;
+            }
+
+            .letters div:last-of-type {
+                grid-column: 4;
+                grid-row: 1;
+            }
+
+        }
     </style>
 </head>
 
@@ -133,7 +268,7 @@
                 <div>me, Alex</div>
                 <div>
                     Trip to South America
-                    <p> - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nulla quibusdam officiis!</p>
+                    <div>-</div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nulla quibusdam officiis!</p>
                 </div>
                 <img src="../Images/attach_26.png" alt="attach">
                 <div>
@@ -146,7 +281,7 @@
                 <div>me, John</div>
                 <div>
                     Santa Monica trip
-                    <p> - Hic inventore cum sit non esse, facere eveniet nam. At, facilis laboriosam.</p>
+                    <div>-</div><p>Hic inventore cum sit non esse, facere eveniet nam. At, facilis laboriosam.</p>
                 </div>
                 <img src="../Images/attach_26.png" alt="attach">
                 <div>
@@ -159,7 +294,7 @@
                 <div>me, John, Alex</div>
                 <div>
                     Birthday party
-                    <p> - 20.04.2019</p>
+                    <div>-</div><p>20.04.2019</p>
                 </div>
                 <div class="empty-div"></div>
                 <div>
@@ -184,7 +319,7 @@
                 <div>me, Elena</div>
                 <div>
                     Duis semper augue
-                    <p> - Nunc finibus sem vel odio mattis</p>
+                    <div>-</div><p>Nunc finibus sem vel odio mattis</p>
                 </div>
                 <img src="../Images/attach_26.png" alt="attach">
                 <div>
@@ -197,7 +332,8 @@
                 <div>Bill, John</div>
                 <div>
                     Ut congue purus
-                    <p> - Perferendis, reiciendis sed! Tenetur est porro praesentium nihil facilis doloribus! Nesciunt, culpa.</p>
+                    <div>-</div><p>Perferendis, reiciendis sed! Tenetur est porro praesentium nihil facilis doloribus! Nesciunt,
+                        culpa.</p>
                 </div>
                 <div class="empty-div"></div>
                 <div>
