@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13: Forms</title>
+    <style>
+        form {
+            border: 2px solid black;
+            padding: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/register" method="post">
+        <h2>Регистрация</h2>
+        <label for="username">Имя пользователя: </label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="email">Электронная почта: </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="passwd">Пароль: </label>
+        <input type="password" name="password" id="passwd">
+        <br>
+        <label for="about">Про себя: </label>
+        <br>
+        <textarea name="about" id="about"></textarea>
+        <br>
+        <label for="agree">Принять лицензию: </label>
+        <input type="checkbox" name="agree" id="agree">
+        <br>
+
+        <fieldset>
+            <legend>Пол</legend>
+            <input type="radio" name="gender" id="genderM" value="male">
+            <label for="genderM">Мужчина</label>
+            <input type="radio" name="gender" id="genderW" value="female">
+            <label for="genderW">Женщина</label>
+        </fieldset>
+        <br>
+
+        <label for="fav-pizza">Любимая пицца: </label>
+        <select name="fav-pizza" id="fav-pizza">
+            <option value="pepperoni">Пепперони</option>
+            <option value="margarita">Маргарита</option>
+            <option value="Quattro-cheese">Четыре сыра</option>
+        </select>
+        <br>
+
+        <label for="fav-genre">Любимый жанр: </label>
+        <input type="text" name="fav-genre" id="fav-genre" list="genres">
+        <datalist id="genres">
+            <option value="horror">Хоррор</option>
+            <option value="action">Экшн</option>
+            <option value="drama">Драма</option>
+        </datalist>
+        <br>
+
+        <label for="birthday">Дата рождения: </label>
+        <input type="date" name="birthday" id="birthday">
+        <br>
+
+        <label for="link">Соц. сети: </label>
+        <input type="url" name="link" id="link">
+        <br>
+
+        <label for="tall">Ваш рост: </label>
+        <input type="number" name="tall" id="tall" min="150" max="200">
+        <br>
+
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+
+
+    <form action="/search" method="get/post">
+        <h2>Поиск</h2>
+        <input type="text" name="query">
+        <input type="submit" value="Поиск" name="" id="">
+        <input type="reset" value="Очистить">
+    </form>
+</body>
+
+</html>
