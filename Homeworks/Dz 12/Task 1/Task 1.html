@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 from Dz 12</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card {
+            background-color: #9bcdcd;
+            border-radius: 5px;
+        }
+
+        .details-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 50px 25px;
+        }
+
+        .card-number,
+        .name-on-card,
+        .footer-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <p class="details-p">Credit card details</p>
+        <div class="details-div">
+            <div class="card-number">
+                <p>Card Number</p>
+                <input type="text" name="card-number-input" id="card-number-input" value="1234 5678 9012 3456">
+            </div>
+            <div class="name-on-card">
+                <p>Name On Card</p>
+                <input type="text" name="name-input" id="name-input" value="Name Surname">
+            </div>
+            <div class="footer-info">
+                <div>
+                    <p>Expire Date</p>
+                    <input type="text" name="date-input" id="date-input" value="02">
+                </div>
+                <div>
+                    <div></div>
+                    <input type="text" name="date-input" id="date-input" value="2017">
+                </div>
+                <div>
+                    <p>CSV No.</p>
+                    <input type="password" name="passwd-input" id="passwd-input" value="***">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
