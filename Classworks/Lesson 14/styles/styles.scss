@@ -1,0 +1,53 @@
+$color: #8e7391;
+$font: Helvetica, sans-serif;
+$fontSize: 1.3em;
+$minWidth: 560px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color;
+    font : {
+        family: $font;
+        size: $fontSize;
+        weight: bold;
+    }
+}
+
+.container{
+    min-width: $minWidth;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    border : {
+        style: solid;
+        color: black;
+        width: 2px;
+        radius: 10px;
+    }
+}
+
+nav{
+    background-color: darken($color,25%);
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        color: burlywood;
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        &:hover{
+            background-color: lighten(burlywood,25%);
+        }
+    }
+}
