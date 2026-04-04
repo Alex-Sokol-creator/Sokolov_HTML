@@ -41,4 +41,12 @@ nav a {
 }
 nav a:hover {
   background-color: rgb(249.5, 243.1666666667, 235);
+}
+
+.danger {
+  color: red;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(72.61, 58.3, 74.2);
 }/*# sourceMappingURL=styles.css.map */
