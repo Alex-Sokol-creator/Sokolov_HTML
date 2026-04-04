@@ -9,12 +9,21 @@
         body {
             background-color: whitesmoke;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            padding: 50px;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         .card {
             background-color: #9bcdcd;
-            border-radius: 5px;
+            border-radius: 10px;
             width: 650px;
+            height: 412px;
+            margin: 30px;
+            position: relative;
         }
 
         .details-div {
@@ -23,26 +32,40 @@
             justify-content: flex-start;
             align-items: flex-start;
             padding: 40px 25px;
-            padding-top: 15px;
+            padding-top: 25px;
+            width: 400px;
         }
 
-        .details-div div input{
+        .details-div div input {
             border: none;
             border-bottom: 1px solid black;
             background-color: #a5d2d2;
             padding: 10px;
         }
 
-        .details-div div p{
+        .details-div div p {
             color: #53747e;
             font-size: medium;
         }
 
-        input{
+        .details-p {
+            background-color: #d76423;
+            padding: 10px 44px;
+            text-transform: uppercase;
+            color: whitesmoke;
+            font-weight: bold;
+            width: 450px;
+            font-size: large;
+            position: relative;
+            left: -20px;
+            top: 30px;
+        }
+
+        input {
             font-size: large;
         }
 
-        input::placeholder{
+        input::placeholder {
             color: #789da2;
         }
 
@@ -54,49 +77,134 @@
             justify-content: flex-start;
             align-items: flex-start;
             width: 100%;
+            box-sizing: border-box;
         }
 
-        #name-input,#card-number-input{
+        #name-input,
+        #card-number-input {
             display: block;
+            width: 100%;
         }
 
-        .footer-info{
+        .footer-info {
             flex-direction: row;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .footer-info input {
+            width: 100%;
+        }
+
+        .footer-info p {
+            display: inline-block;
+        }
+
+        .footer-info div:nth-of-type(1) div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
             gap: 20px;
         }
 
-        .footer-info input{
-            width: 100px;
+        .footer-info div:nth-of-type(1) div input {
+            flex: 1;
         }
 
-        .footer-info div:nth-of-type(1) input:nth-of-type(2){
-            margin-left: 20px;
+        .details-and-img {
+            display: flex;
+            gap: 50px;
         }
+
+        /* .image {
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .image img {
+            width: 300px;
+        } */
+
+        .image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .image img {
+            position: absolute;
+            right: -50px;
+            bottom: -120px;
+            width: 280px;
+            height: auto;
+        }
+
+        /* .footer-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .footer-info div:nth-of-type(1) p {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .footer-info div:nth-of-type(2) p {
+            grid-row: 1;
+            grid-column: 3;
+        }
+
+        .footer-info div:nth-of-type(1) div input:nth-of-type(1){
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .footer-info div:nth-of-type(1) div input:nth-of-type(2){
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+        .footer-info div:nth-of-type(2) div input:nth-of-type(1){
+            grid-row: 2;
+            grid-column: 3;
+        } */
     </style>
 </head>
 
 <body>
     <div class="card">
         <p class="details-p">Credit card details</p>
-        <div class="details-div">
-            <div class="card-number">
-                <p>Card Number</p>
-                <input type="text" name="card-number-input" id="card-number-input" placeholder="1234 5678 9012 3456">
-            </div>
-            <div class="name-on-card">
-                <p>Name On Card</p>
-                <input type="text" name="name-input" id="name-input" placeholder="Name Surname">
-            </div>
-            <div class="footer-info">
-                <div>
-                    <p>Expire Date</p>
-                    <input type="text" name="date-input" id="date-input" placeholder="02">
-                    <input type="text" name="date-input" id="date-input" placeholder="2017">
+        <div class="details-and-img">
+            <div class="details-div">
+                <div class="card-number">
+                    <p>Card Number</p>
+                    <input type="text" name="card-number-input" id="card-number-input"
+                        placeholder="1234 5678 9012 3456">
                 </div>
-                <div>
-                    <p>CSV No.</p>
-                    <input type="password" name="passwd-input" id="passwd-input" placeholder="***">
+                <div class="name-on-card">
+                    <p>Name On Card</p>
+                    <input type="text" name="name-input" id="name-input" placeholder="Name Surname">
                 </div>
+                <div class="footer-info">
+                    <div>
+                        <p>Expire Date</p>
+                        <div>
+                            <input type="text" name="date-input" id="date-input" placeholder="02">
+                            <input type="text" name="date-input" id="date-input" placeholder="2017">
+                        </div>
+                    </div>
+                    <div>
+                        <p>CSV No.</p>
+                        <input type="password" name="passwd-input" id="passwd-input" placeholder="***">
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="../../../Shared_Resources/Catnap.png" alt="Catnap">
             </div>
         </div>
     </div>
