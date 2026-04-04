@@ -14,6 +14,7 @@
         .card {
             background-color: #9bcdcd;
             border-radius: 5px;
+            width: 650px;
         }
 
         .details-div {
@@ -21,7 +22,28 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            margin: 50px 25px;
+            padding: 40px 25px;
+            padding-top: 15px;
+        }
+
+        .details-div div input{
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: #a5d2d2;
+            padding: 10px;
+        }
+
+        .details-div div p{
+            color: #53747e;
+            font-size: medium;
+        }
+
+        input{
+            font-size: large;
+        }
+
+        input::placeholder{
+            color: #789da2;
         }
 
         .card-number,
@@ -31,9 +53,25 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+            width: 100%;
         }
 
-        
+        #name-input,#card-number-input{
+            display: block;
+        }
+
+        .footer-info{
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .footer-info input{
+            width: 100px;
+        }
+
+        .footer-info div:nth-of-type(1) input:nth-of-type(2){
+            margin-left: 20px;
+        }
     </style>
 </head>
 
@@ -43,24 +81,21 @@
         <div class="details-div">
             <div class="card-number">
                 <p>Card Number</p>
-                <input type="text" name="card-number-input" id="card-number-input" value="1234 5678 9012 3456">
+                <input type="text" name="card-number-input" id="card-number-input" placeholder="1234 5678 9012 3456">
             </div>
             <div class="name-on-card">
                 <p>Name On Card</p>
-                <input type="text" name="name-input" id="name-input" value="Name Surname">
+                <input type="text" name="name-input" id="name-input" placeholder="Name Surname">
             </div>
             <div class="footer-info">
                 <div>
                     <p>Expire Date</p>
-                    <input type="text" name="date-input" id="date-input" value="02">
-                </div>
-                <div>
-                    <div></div>
-                    <input type="text" name="date-input" id="date-input" value="2017">
+                    <input type="text" name="date-input" id="date-input" placeholder="02">
+                    <input type="text" name="date-input" id="date-input" placeholder="2017">
                 </div>
                 <div>
                     <p>CSV No.</p>
-                    <input type="password" name="passwd-input" id="passwd-input" value="***">
+                    <input type="password" name="passwd-input" id="passwd-input" placeholder="***">
                 </div>
             </div>
         </div>
