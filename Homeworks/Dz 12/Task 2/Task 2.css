@@ -221,8 +221,11 @@ fieldset{
 .Text textarea{
     min-width: 750px;
     min-height: 200px;
+    padding: 10px 15px;
+    font-size: 20px;
 }
 
-.Text textarea:hover{
+.Text textarea::placeholder{
     font-size: 20px;
+    
 }
