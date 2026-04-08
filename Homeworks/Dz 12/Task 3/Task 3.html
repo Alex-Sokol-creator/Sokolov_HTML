@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3 from Dz 12</title>
     <style>
-        
+        body{
+            background-color: whitesmoke;
+            padding: 15px;
+        }
+
+        .registration-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .registration-form div:not(.passwords){
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .registration-form input{
+            border: none;
+            border-bottom: 1px solid lightgray;
+            font-size: 15px;
+            padding: 10px 15px;
+            background-color: whitesmoke;
+        }
+
+        .registration-form img{
+            width: 40px;
+        }
+
+        .passwords{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
+
 <body>
-    
+    <div class="registration">
+        <div class="form">
+            <div class="registration-form">
+                <h2>Registration form</h2>
+                <div>
+                    <img src="../images/account.png" alt="account">
+                    <input type="text" class="username" placeholder="Username">
+                </div>
+                <div>
+                    <img src="../../Dz 10/Images/mail.png" alt="mail">
+                    <input type="text" class="mail" placeholder="Email address">
+                </div>
+                <div>
+                    <img src="../images/lock.png" alt="lock">
+                    <div class="passwords">
+                        <input type="password" class="password" placeholder="Password">
+                        <input type="password" class="password-confirm" placeholder="Confirm password">
+                    </div>
+                </div>
+            </div>
+            <div class="personal-details">
+                <input type="text" class="first-name" placeholder="First name">
+                <input type="text" class="last-name" placeholder="Last name">
+                <input type="text" class="Gender" placeholder="Gender" list="genders">
+                <datalist id="genders">
+                    <option>Male</option>
+                    <option>Female</option>
+                </datalist>
+                <input type="date" class="date">
+            </div>
+            <div class="options">
+                <div class="checkboxes">
+                    <input type="checkbox" class="checkbox-1">
+                    <label for="checkbox-1">I want to receive news and special offers</label>
+                    <input type="checkbox" class="checkbox-2">
+                    <label for="checkbox-2">I agree with the Terms and Conditions</label>
+                </div>
+                <hr>
+                <div class="button">
+                    <input type="submit" value="SUBMIT">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
