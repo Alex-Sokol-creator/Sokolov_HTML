@@ -1,0 +1,23 @@
+.btn{
+    padding: $padding 15px;
+    border: $border-simple;
+    border-radius: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-align: center
+}
+
+.btn-buy{
+    @extend .btn;
+    background-color: $success;
+}
+
+.btn-cancel{
+    @extend .btn;
+    background-color: $danger;
+}
+
+.btn-info{
+    @extend .btn;
+    background-color: $info;
+}
