@@ -4,7 +4,8 @@
     border-radius: 7px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: whitesmoke;
-    text-align: center
+    text-align: center;
+    transition: all 0.4s ease 0s
 }
 
 .btn-buy{
@@ -20,4 +21,19 @@
 .btn-info{
     @extend .btn;
     background-color: $info;
+}
+
+.btn-buy:hover{
+    background-color: darken($success,5%);
+    color: rgb(233, 204, 111);
+}
+
+.btn-cancel:hover{
+    background-color: darken($danger,5%);
+    color: rgb(233, 204, 111);
+}
+
+.btn-info:hover{
+    background-color: darken($info,5%);
+    color: rgb(233, 204, 111);
 }

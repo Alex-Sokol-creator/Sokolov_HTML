@@ -6,7 +6,9 @@
     margin: $margin-y-axis $margin-x-axis;
     transition: all 0.4s ease 0s;
     img{
-        width: 150px;
+        // width: 150px;
+        height: 195px;
+        max-width: 178px;
         margin: $margin-y-axis $margin-x-axis;
         margin-bottom: 0;
     }
@@ -14,6 +16,6 @@
         @include paragraphs-settings()
     }
     &:hover{
-        background-color: darken($card-bg,5%);
+        background-color: darken($card-bg,8%);
     }
 }
