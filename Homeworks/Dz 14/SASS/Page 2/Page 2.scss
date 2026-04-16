@@ -3,3 +3,8 @@
 @import "_header";
 @import "_footer";
 
+body{
+    margin: $margin-main;
+    padding: $padding-main;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

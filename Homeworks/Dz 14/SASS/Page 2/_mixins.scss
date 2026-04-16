@@ -5,8 +5,9 @@
 }
 
 @mixin flex-div-space{
-    @include flex-div-center();
+    display: flex;
     justify-content: space-between;
+    align-items: center
 }
 
 @mixin flex-div-column{

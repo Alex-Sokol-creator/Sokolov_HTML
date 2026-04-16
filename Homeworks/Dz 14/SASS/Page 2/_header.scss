@@ -1,10 +1,27 @@
-header{
+header {
     @include flex-div-space;
-    img{
+
+    img {
         width: $img-width-small;
     }
-    .left-header-part,.right-header-part{
+
+    .left-header-part,
+    .right-header-part {
         @include flex-div-center;
         gap: $gap-main;
+    }
+
+    .left-header-part p:first-of-type {
+        text-transform: uppercase
+    }
+
+    .button-add {
+        @include flex-div-center;
+        gap: 5px;
+    }
+
+    .button-add p:first-of-type {
+        font-weight: $font-weight-bold;
+        font-size: $font-size-large;
     }
 }
