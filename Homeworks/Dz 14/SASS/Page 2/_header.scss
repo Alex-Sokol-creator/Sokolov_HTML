@@ -1,0 +1,10 @@
+header{
+    @include flex-div-space;
+    img{
+        width: $img-width-small;
+    }
+    .left-header-part,.right-header-part{
+        @include flex-div-center;
+        gap: $gap-main;
+    }
+}
