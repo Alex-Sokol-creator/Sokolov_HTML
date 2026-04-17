@@ -14,4 +14,10 @@
     @include flex-div-center();
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin button-add{
+    background-color: $bg-color-button;
+    color: $font-color-main;
 }

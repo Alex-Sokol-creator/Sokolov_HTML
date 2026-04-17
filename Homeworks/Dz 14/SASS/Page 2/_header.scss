@@ -1,6 +1,8 @@
 header {
     @include flex-div-space;
 
+    margin-bottom: $margin-main;
+
     img {
         width: $img-width-small;
     }
@@ -17,11 +19,25 @@ header {
 
     .button-add {
         @include flex-div-center;
-        gap: 5px;
+        @include button-add;
+        padding: 0 $padding-main;
+        border-radius: 6px;
+        gap: 10px;
     }
 
     .button-add p:first-of-type {
         font-weight: $font-weight-bold;
         font-size: $font-size-large;
+        height: 38px;
+        margin: 0;
+    }
+
+    .button-add p:nth-of-type(2){
+        font-size: $font-size-small;
+    }
+
+    a{
+        text-decoration: none;
+        color: $font-color-link;
     }
 }
