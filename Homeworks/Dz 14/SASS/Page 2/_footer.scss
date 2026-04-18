@@ -15,7 +15,7 @@ footer{
     .links-div{
         @include flex-div-center;
         gap: 100px;
-        font-size: $font-size-small;
+        font-size: $font-size-medium;
     }
 
     .first-column,.second-column,.third-column{
