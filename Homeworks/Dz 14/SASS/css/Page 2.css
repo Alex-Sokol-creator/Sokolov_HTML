@@ -80,4 +80,8 @@ body {
   margin: 15px;
   padding: 10px 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
 }/*# sourceMappingURL=Page 2.css.map */
