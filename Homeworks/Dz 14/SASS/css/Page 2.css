@@ -46,6 +46,8 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 100px;
+  border-top: 1px solid rgb(209, 209, 209);
+  padding-top: 60px;
 }
 footer img {
   width: 80px;
