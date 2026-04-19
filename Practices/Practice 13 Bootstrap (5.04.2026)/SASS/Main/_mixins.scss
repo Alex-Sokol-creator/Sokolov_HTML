@@ -1,0 +1,23 @@
+@mixin flex-div-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-div-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+@mixin flex-div-column{
+    @include flex-div-center();
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin button-add{
+    background-color: $bg-color-button;
+    color: $font-color-main;
+}

@@ -1,0 +1,43 @@
+header {
+    @include flex-div-space;
+
+    margin-bottom: $margin-main;
+
+    img {
+        width: $img-width-small;
+    }
+
+    .left-header-part,
+    .right-header-part {
+        @include flex-div-center;
+        gap: $gap-main;
+    }
+
+    .left-header-part p:first-of-type {
+        text-transform: uppercase
+    }
+
+    .button-add {
+        @include flex-div-center;
+        @include button-add;
+        padding: 0 $padding-main;
+        border-radius: 6px;
+        gap: 10px;
+    }
+
+    .button-add p:first-of-type {
+        font-weight: $font-weight-bold;
+        font-size: $font-size-large;
+        height: 38px;
+        margin: 0;
+    }
+
+    .button-add p:nth-of-type(2){
+        font-size: $font-size-medium;
+    }
+
+    a{
+        text-decoration: none;
+        color: $font-color-link;
+    }
+}

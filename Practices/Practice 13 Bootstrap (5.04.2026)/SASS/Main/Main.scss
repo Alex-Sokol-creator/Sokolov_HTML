@@ -1,0 +1,14 @@
+@import "_variables";
+@import "_mixins";
+@import "_header";
+@import "_footer";
+
+body{
+    margin: $margin-main;
+    padding: $padding-main 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-input:focus{
+    outline: none;
+}

@@ -1,0 +1,84 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+header img {
+  width: 55px;
+}
+header .left-header-part,
+header .right-header-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header .left-header-part p:first-of-type {
+  text-transform: uppercase;
+}
+header .button-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffbd11;
+  color: black;
+  padding: 0 10px;
+  border-radius: 6px;
+  gap: 10px;
+}
+header .button-add p:first-of-type {
+  font-weight: bold;
+  font-size: 24px;
+  height: 38px;
+  margin: 0;
+}
+header .button-add p:nth-of-type(2) {
+  font-size: 18px;
+}
+header a {
+  text-decoration: none;
+  color: rgb(40, 155, 194);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(209, 209, 209);
+  padding-top: 60px;
+}
+footer img {
+  width: 80px;
+}
+footer .right-footer-part {
+  margin-left: 50px;
+}
+footer .links-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .first-column, footer .second-column, footer .third-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(40, 155, 194);
+}
+
+body {
+  margin: 15px;
+  padding: 10px 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
+}/*# sourceMappingURL=Main.css.map */

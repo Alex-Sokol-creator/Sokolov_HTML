@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 from Dz 14</title>
+    <link rel="stylesheet" href="SASS/css/Main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        .list-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 40px;
+            column-gap: 20px;
+            font-size: 15px;
+        }
+
+        @media screen and (max-width: 470px) {
+            .list-div {
+                grid-template-columns: repeat(3, 1fr);
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="left-header-part">
+                <img src="Images/ad.png" alt="logo-colorful" class="logo-colorful">
+                <div class="company-name">
+                    <p class="m-0">Ad`s board</p>
+                </div>
+            </div>
+            <div class="right-header-part">
+                <div class="button-add">
+                    <p class="m-0">+</p>
+                    <p class="m-0">New add</p>
+                </div>
+                <img src="Images/av_64.png" alt="profile" class="profile">
+                <a href="#">My profile</a>
+            </div>
+        </header>
+
+        <main>
+
+            <form style="background-color: #cce5ff;" class="d-flex justify-content-around gap-3 p-3 my-4 rounded"
+                action="">
+                <div style="width: 40%;" class="d-flex rounded-3 overflow-hidden">
+                    <img style="width: 50px;" class="bg-secondary-subtle p-2 pe-3" src="Images/Лупа.png"
+                        alt="Лупа sign">
+                    <input class="form-input border border-0 ps-2 w-100" type="text"
+                        placeholder="11 999 345 ads near you">
+                </div>
+                <div style="width: 40%;" class="d-flex rounded-3 overflow-hidden">
+                    <img style="width: 50px;" class="bg-secondary-subtle p-2 pe-3" src="Images/Location.png"
+                        alt="Location sign">
+                    <input class="form-input border border-0 ps-2 w-100" type="text"
+                        placeholder="Place (for ex.: Odessa, Sadova)">
+                </div>
+                <button style="background-color: #007aff; width: 15%;" type="button" class="d-flex justify-content-center
+                     align-items-center h-100
+                     btn p-2 px-4
+                     border border-0
+                     text-white
+                     ">
+                    <p class="m-0">Search</p>
+                </button>
+            </form>
+
+            <div class="list-div my-4 p-2">
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Baby.png" alt="baby">
+                        <p class="m-0 text-light-emphasis">Children`s world</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/House.png" alt="House">
+                        <p class="m-0 text-light-emphasis">Property</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Car.png" alt="Car">
+                        <p class="m-0 text-light-emphasis">Transport</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Gears.png" alt="Gears">
+                        <p class="m-0 text-light-emphasis">Spare parts of cars</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Job.png" alt="Job">
+                        <p class="m-0 text-light-emphasis">Jobs</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Paw.png" alt="Paw">
+                        <p class="m-0 text-light-emphasis">Animals</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Sofa.png" alt="Sofa">
+                        <p class="m-0 text-light-emphasis">House & Garden</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/MB Phone.png" alt="Phone">
+                        <p class="m-0 text-light-emphasis">Phones, Tablets & PCs</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Spanner.png" alt="Spanner">
+                        <p class="m-0 text-light-emphasis">Business & Services</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/T-shirt.png" alt="T-shirt">
+                        <p class="m-0 text-light-emphasis">Fashion & Style</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Bike.png" alt="Bike">
+                        <p class="m-0 text-light-emphasis">Hobbies, recreation & sports</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Gift.png" alt="Gift">
+                        <p class="m-0 text-light-emphasis">Gifts</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-black">
+                    <div class="d-flex justify-content-start align-items-center gap-3 p-1 h-100">
+                        <img style="width: 25%;" class="" src="Images/Exchange.png" alt="Exchange">
+                        <p class="m-0 text-light-emphasis">Exchange</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <footer class="gap-5">
+            <div class="left-footer-part">
+                <img src="Images/ad_bw.png" alt="logo-colorless" class="logo-colorless">
+            </div>
+            <div class="right-footer-part">
+                <div class="links-div fs-6 gap-4">
+                    <div class="first-column">
+                        <a href="#">Mobile applications</a>
+                        <a href="#">Paid services</a>
+                        <a href="#">Advertising on the website</a>
+                        <a href="#">For the press</a>
+                        <a href="#">Help and Feedback</a>
+                    </div>
+                    <div class="second-column">
+                        <a href="#">AD`S BOARD blog</a>
+                        <a href="#">Safety reguletions</a>
+                        <a href="#">How to sell and buy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Partners</a>
+                    </div>
+                    <div class="third-column">
+                        <a href="#">Work at AD`S BOARD</a>
+                        <a href="#">Popular Searches</a>
+                        <a href="#">Map of Regions</a>
+                        <a href="#">Advertising preferences</a>
+                        <a href="#">Site Map</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

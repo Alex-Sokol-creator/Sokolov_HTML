@@ -1,0 +1,34 @@
+footer{
+    @include flex-div-center;
+    // gap: 100px;
+    border-top: 1px solid rgb(209, 209, 209);
+    padding-top: 60px;
+
+    img{
+        width: $img-width-big;
+    }
+
+    .right-footer-part{
+        margin-left: 50px;
+    }
+
+    .links-div{
+        @include flex-div-center;
+        // gap: 100px;
+        // font-size: $font-size-medium;
+    }
+
+    .first-column,.second-column,.third-column{
+        @include flex-div-column;
+        gap: $gap-main;
+    }
+
+    // .links-div p{
+    //     color: $font-color-link;
+    // }
+
+    a{
+        text-decoration: none;
+        color: $font-color-link;
+    }
+}
