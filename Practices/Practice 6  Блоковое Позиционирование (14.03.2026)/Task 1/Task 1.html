@@ -7,22 +7,28 @@
     <style>
         body{
             background-color: whitesmoke;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         #main{
             margin: 0 auto;
             width: 80%;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 15px;
+            row-gap: 20px;
         }
 
         .one-good{
             /* display: inline-block; */
-            width: 250px;
+            /* width: 250px; */
             border: 1px solid black;
             background-color: bisque;
             text-align: center;
-            float: left;
-            margin: 10px;
+            padding: 20px;
+            /* float: left; */
+            /* margin: 10px; */
         }
 
         .name{
@@ -50,15 +56,41 @@
         }
 
         img{
-            width: 180px;
-            height: auto;
-            margin: 10px;
-            margin-bottom: 0;
+            width: 100%;
+            /* margin: 10px; */
+            /* margin-bottom: 0; */
         }
     </style>
 </head>
 <body>
     <div id="main">
+        <div class="one-good">
+            <img src="../../../Shared_Resources/Catnap.png" alt="Catnap">
+            <p class="name">Назва товару</p>
+            <p class="description">Короткий опис товару</p>
+            <p class="price">1000 грн</p>
+            <div class="button">
+                <p class="button-text">Купити</p>
+            </div>
+        </div>
+        <div class="one-good">
+            <img src="../../../Shared_Resources/Catnap.png" alt="Catnap">
+            <p class="name">Назва товару</p>
+            <p class="description">Короткий опис товару</p>
+            <p class="price">1000 грн</p>
+            <div class="button">
+                <p class="button-text">Купити</p>
+            </div>
+        </div>
+        <div class="one-good">
+            <img src="../../../Shared_Resources/Catnap.png" alt="Catnap">
+            <p class="name">Назва товару</p>
+            <p class="description">Короткий опис товару</p>
+            <p class="price">1000 грн</p>
+            <div class="button">
+                <p class="button-text">Купити</p>
+            </div>
+        </div>
         <div class="one-good">
             <img src="../../../Shared_Resources/Catnap.png" alt="Catnap">
             <p class="name">Назва товару</p>
