@@ -1,6 +1,6 @@
 footer{
     @include flex-div-center;
-    gap: 100px;
+    // gap: 100px;
     border-top: 1px solid rgb(209, 209, 209);
     padding-top: 60px;
 
@@ -14,8 +14,8 @@ footer{
 
     .links-div{
         @include flex-div-center;
-        gap: 100px;
-        font-size: $font-size-medium;
+        // gap: 100px;
+        // font-size: $font-size-medium;
     }
 
     .first-column,.second-column,.third-column{
