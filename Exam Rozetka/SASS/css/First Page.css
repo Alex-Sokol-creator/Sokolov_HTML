@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.header-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  background-color: rgb(34, 31, 31);
+  height: 64px;
+  padding: 12px 0;
+}
+.header-div button, .header-div a:not(.rz-symbols) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+  padding: 8px;
+  border: none;
+}
+.header-div .rz-symbols {
+  padding: 0;
+}
+.header-div .search-but {
+  width: 75px;
+  background-color: #00a046;
+  padding: 0 10px;
+}
+.header-div .Catalog {
+  background-color: transparent;
+  width: auto;
+  padding: 5px 10px;
+  gap: 10px;
+  color: #00a046;
+}
+.header-div form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+}
+.header-div .header-tools {
+  height: 100%;
+}
+.header-div img {
+  width: auto;
+  height: 100%;
+}/*# sourceMappingURL=First Page.css.map */
