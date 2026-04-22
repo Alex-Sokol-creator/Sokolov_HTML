@@ -6,27 +6,258 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  color: rgb(31, 31, 31);
   width: 300px;
+  border-right: 1px solid lightgray;
+}
+aside .cards {
+  border-bottom: 1px solid lightgray;
 }
 aside .cards .card {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  gap: 5px;
+  align-items: center;
   border: none;
   border-radius: 0;
-  padding: 16px;
+  padding: 12px 8px;
+}
+aside .cards .card div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
 }
 aside .cards .card img {
   width: auto;
   height: 30px;
-  margin: 0 5px;
 }
 aside .cards .card p:nth-of-type(2) {
-  font-size: 12px;
+  font-size: 0.9em;
 }
 aside .cards .card:first-of-type {
   background-color: #e5f5ec;
+}
+aside .Categories {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding-top: 24px;
+  padding-right: 16px;
+}
+aside .one-category a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 2px 8px;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+  transition: all 0.2s ease 0s;
+  font-weight: 550;
+}
+aside .one-category a:hover {
+  background-color: rgb(195, 231, 195);
+  color: rgb(35, 136, 35);
+}
+aside .one-category a .category-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+}
+aside .one-category a .category-img img {
+  width: auto;
+  height: 30px;
+}
+aside .information {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 0 12px;
+  border-bottom: 1px solid lightgray;
+}
+aside .information a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 2px 8px;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+  transition: all 0.2s ease 0s;
+  padding: 5px 0;
+}
+aside .information a:hover {
+  color: rgb(35, 136, 35);
+}
+aside .information a .information-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+}
+aside .information a .information-img img {
+  width: auto;
+  height: 30px;
+}
+aside .information {
+  margin-top: 12px;
+  font-weight: 700;
+}
+aside .information .location-p p:last-of-type {
+  color: rgb(139, 139, 139);
+  font-size: 0.9em;
+}
+aside .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 0 12px;
+  border-bottom: 1px solid lightgray;
+}
+aside .profile a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 2px 8px;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+  transition: all 0.2s ease 0s;
+  padding: 5px 0;
+}
+aside .profile a:hover {
+  color: rgb(35, 136, 35);
+}
+aside .profile a .information-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+}
+aside .profile a .information-img img {
+  width: auto;
+  height: 30px;
+}
+aside .profile {
+  padding: 16px;
+  padding-left: 12px;
+  font-weight: 550;
+}
+aside .profile .profile-p p:last-of-type {
+  color: rgb(139, 139, 139);
+  font-size: 0.9em;
+}
+aside .smart,
+aside .bonus {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 0 12px;
+  border-bottom: 1px solid lightgray;
+}
+aside .smart a,
+aside .bonus a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 2px 8px;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+  transition: all 0.2s ease 0s;
+  padding: 5px 0;
+}
+aside .smart a:hover,
+aside .bonus a:hover {
+  color: rgb(35, 136, 35);
+}
+aside .smart a .information-img,
+aside .bonus a .information-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+}
+aside .smart a .information-img img,
+aside .bonus a .information-img img {
+  width: auto;
+  height: 30px;
+}
+aside .smart,
+aside .bonus {
+  padding: 16px;
+  padding-left: 12px;
+  font-weight: 600;
+}
+aside .options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding-top: 24px;
+  padding-right: 16px;
+  border-bottom: 1px solid lightgray;
+}
+aside .options a {
+  margin-left: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 2px 8px;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+  transition: all 0.2s ease 0s;
+  font-weight: 600;
+  padding: 5px 0;
+}
+aside .options a:hover {
+  color: rgb(35, 136, 35);
+}
+aside .apps {
+  padding: 16px 24px;
+  font-weight: 600;
+  color: rgb(139, 139, 139);
+  border-bottom: 1px solid lightgray;
+}
+aside .apps .apps-adv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+aside .apps .apps-adv img {
+  width: 120px;
+  height: auto;
+}
+aside .messangers {
+  padding: 16px 24px;
+  font-weight: 600;
+  color: rgb(139, 139, 139);
+  border-bottom: 1px solid lightgray;
+}
+aside .messangers .apps-adv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+  padding-left: 0;
+  gap: 10px;
+}
+aside .messangers .apps-adv img {
+  width: auto;
+  height: 25px;
+  opacity: 0.5;
 }
 
 * {
