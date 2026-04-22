@@ -1,3 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 300px;
+}
+aside .cards .card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5px;
+  border: none;
+  border-radius: 0;
+  padding: 16px;
+}
+aside .cards .card img {
+  width: auto;
+  height: 30px;
+  margin: 0 5px;
+}
+aside .cards .card p:nth-of-type(2) {
+  font-size: 12px;
+}
+aside .cards .card:first-of-type {
+  background-color: #e5f5ec;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +39,9 @@
   gap: 20px;
   background-color: rgb(34, 31, 31);
   height: 64px;
-  padding: 12px 0;
+  padding: 12px 60px;
+  margin-bottom: 15px;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 .header-div button, .header-div a:not(.rz-symbols) {
@@ -19,14 +52,26 @@
   height: 100%;
   padding: 8px;
   border: none;
+  background-color: transparent;
+  transition: all 0.2s ease 0s;
+}
+.header-div button:not(.search-but):hover, .header-div a:not(.rz-symbols):not(.search-but):hover {
+  background-color: rgb(97, 96, 96);
+  border-radius: 5px;
 }
 .header-div .rz-symbols {
   padding: 0;
 }
+.header-div .rz-text {
+  padding: 8px;
+}
 .header-div .search-but {
-  width: 75px;
+  width: 85px;
   background-color: #00a046;
   padding: 0 10px;
+}
+.header-div .search-but:hover {
+  background-color: #01bb52;
 }
 .header-div .Catalog {
   background-color: transparent;
@@ -48,6 +93,10 @@
   flex: 1;
   border: none;
 }
+.header-div form button:last-of-type {
+  position: relative;
+  left: 5px;
+}
 .header-div .header-tools {
   height: 100%;
   gap: 10px;
@@ -59,4 +108,9 @@
 .header-div img {
   width: auto;
   height: 100%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
 }/*# sourceMappingURL=First Page.css.map */

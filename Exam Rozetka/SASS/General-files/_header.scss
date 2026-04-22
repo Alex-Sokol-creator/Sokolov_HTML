@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -9,21 +11,37 @@
     gap: 20px;
     background-color: $header-bg;
     height: 64px;
-    padding: 12px 0;
+    padding: 12px 60px;
+    margin-bottom: 15px;
+    font-family: "Nunito",sans-serif;
     font-weight: bold;
 
     button,a:not(.rz-symbols){
         @include buttons-and-links;
+        background-color: transparent;
+        transition: all 0.2s ease 0s;
+        &:not(.search-but):hover{
+            background-color: rgb(97, 96, 96);
+            border-radius: 5px;
+        }
     }
 
     .rz-symbols{
         padding: 0;
+        
+    }
+
+    .rz-text{
+        padding: 8px;
     }
 
     .search-but{
-        width: 75px;
+        width: 85px;
         background-color: #00a046;
         padding: 0 10px;
+        &:hover{
+            background-color: #01bb52;
+        }
     }
 
     .Catalog{
@@ -49,6 +67,10 @@
             flex: 1;
             border: none;
             // width: 75%;
+        }
+        button:last-of-type{
+            position: relative;
+            left: 5px;
         }
     }
 
