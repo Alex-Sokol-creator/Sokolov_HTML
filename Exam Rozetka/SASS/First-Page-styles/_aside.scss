@@ -6,6 +6,7 @@ aside {
     color: $font-color-main;
     width: 300px;
     border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 
     .cards {
         border-bottom: 1px solid lightgray;
@@ -141,7 +142,7 @@ aside {
         padding: 16px 24px;
         font-weight: 600;
         color: $font-color-secondary;
-        border-bottom: 1px solid lightgray;
+        // border-bottom: 1px solid lightgray;
         .apps-adv {
             display: flex;
             flex-direction: column;

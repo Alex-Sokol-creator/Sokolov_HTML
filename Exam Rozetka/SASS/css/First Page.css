@@ -9,6 +9,7 @@ aside {
   color: rgb(31, 31, 31);
   width: 300px;
   border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 aside .cards {
   border-bottom: 1px solid lightgray;
@@ -243,7 +244,6 @@ aside .messangers {
   padding: 16px 24px;
   font-weight: 600;
   color: rgb(139, 139, 139);
-  border-bottom: 1px solid lightgray;
 }
 aside .messangers .apps-adv {
   display: flex;
@@ -258,6 +258,10 @@ aside .messangers .apps-adv img {
   width: auto;
   height: 25px;
   opacity: 0.5;
+}
+
+.sect-div {
+  font-size: 0.9em;
 }
 
 * {
@@ -339,6 +343,12 @@ aside .messangers .apps-adv img {
 .header-div img {
   width: auto;
   height: 100%;
+}
+
+footer {
+  padding: 0 24px;
+  border-top: 3px solid #00a046;
+  background-color: #f5f5f5;
 }
 
 body {
