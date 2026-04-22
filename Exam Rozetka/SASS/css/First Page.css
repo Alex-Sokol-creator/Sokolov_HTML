@@ -110,7 +110,7 @@ aside .information {
   font-weight: 700;
 }
 aside .information .location-p p:last-of-type {
-  color: rgb(139, 139, 139);
+  color: rgb(129, 129, 129);
   font-size: 0.9em;
 }
 aside .profile {
@@ -152,7 +152,7 @@ aside .profile {
   font-weight: 550;
 }
 aside .profile .profile-p p:last-of-type {
-  color: rgb(139, 139, 139);
+  color: rgb(129, 129, 129);
   font-size: 0.9em;
 }
 aside .smart,
@@ -228,7 +228,7 @@ aside .options a:hover {
 aside .apps {
   padding: 16px 24px;
   font-weight: 600;
-  color: rgb(139, 139, 139);
+  color: rgb(129, 129, 129);
   border-bottom: 1px solid lightgray;
 }
 aside .apps .apps-adv {
@@ -243,14 +243,15 @@ aside .apps .apps-adv img {
 aside .messangers {
   padding: 16px 24px;
   font-weight: 600;
-  color: rgb(139, 139, 139);
+  color: rgb(129, 129, 129);
 }
 aside .messangers .apps-adv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 5px;
+  padding: 10px 5px;
+  padding-bottom: 0;
   padding-left: 0;
   gap: 10px;
 }
@@ -346,9 +347,46 @@ aside .messangers .apps-adv img {
 }
 
 footer {
-  padding: 0 24px;
+  padding: 0 32px;
   border-top: 3px solid #00a046;
   background-color: #f5f5f5;
+}
+footer .messangers {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: rgb(129, 129, 129);
+}
+footer .messangers .apps-adv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+  padding-left: 0;
+  gap: 10px;
+}
+footer .messangers .apps-adv img {
+  width: auto;
+  height: 25px;
+  opacity: 0.5;
+}
+footer .qr-div #qr-code {
+  width: 80px;
+  height: 80px;
+}
+footer .qr-div .apps-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .qr-div .apps-icons a img {
+  width: 100px;
+  height: auto;
+}
+footer .qr-block {
+  width: 250px;
+  font-size: 0.9em;
+  margin-top: 10px;
 }
 
 body {

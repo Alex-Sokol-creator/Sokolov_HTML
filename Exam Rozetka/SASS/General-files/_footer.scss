@@ -1,6 +1,54 @@
-
-footer{
-    padding: 0 24px;
+footer {
+    padding: 0 32px;
     border-top: 3px solid #00a046;
     background-color: #f5f5f5;
+
+    .messangers {
+        // padding: 16px 24px;
+        font-weight: 600;
+        font-size: $font-size-small;
+        color: $font-color-secondary;
+
+        // border-bottom: 1px solid lightgray;
+        .apps-adv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 5px;
+            padding-left: 0;
+            gap: 10px;
+
+            img {
+                width: auto;
+                height: 25px;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .qr-div {
+        #qr-code {
+            width: 80px;
+            height: 80px;
+        }
+
+        .apps-icons {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .qr-block{
+        width: 250px;
+        font-size: $font-size-small;
+        margin-top: 10px;
+    }
 }
