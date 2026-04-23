@@ -4,6 +4,13 @@
     align-items: center;
 }
 
+@mixin flex-div-column{
+    @include flex-center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 @mixin buttons-and-links {
     @include flex-center;
     width: 40px;
