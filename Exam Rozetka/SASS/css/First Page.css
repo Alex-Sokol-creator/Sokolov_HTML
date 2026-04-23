@@ -1,6 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+}
+.goods .one-good {
+  position: relative;
+  padding: 20px;
+  max-width: 250px;
+  border-right: 1px solid lightgray;
+}
+.goods .one-good .heart {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 2;
+}
+.goods .one-good .heart:hover {
+  opacity: 0.7;
+}
+.goods .one-good .good-img-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods .one-good .good-img-main img {
+  width: 70%;
+  height: auto;
+}
+.goods .one-good .name {
+  font-size: 0.9em;
+}
+.goods .one-good .name a {
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+}
+.goods .one-good .name a:hover {
+  color: #01bb52;
+  text-decoration: underline;
+}
+.goods .one-good .good-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.goods .one-good .good-detail .price {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.goods .one-good .good-detail .free-delivery {
+  color: #00a046;
+  font-size: 0.8em;
+}
+.goods .one-good .good-detail .good-detail-upper, .goods .one-good .good-detail .good-detail-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+}
+
 aside {
   display: flex;
   flex-direction: column;
@@ -678,4 +739,63 @@ body {
   .main-content {
     padding: 0 8px;
   }
+}
+.main-content main {
+  padding-left: 40px;
+  padding-top: 1px;
+  width: 100%;
+}
+.main-content main .order-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 12px 17px;
+  border: 1px solid lightgray;
+}
+.main-content main .order-main .hide {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+.main-content main .order-main img:not(.pr-cart-green) {
+  width: 50px;
+  height: auto;
+}
+.main-content main .order-main .pr-cart-green {
+  width: 30px;
+  height: auto;
+}
+.main-content main .order-main div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9em;
+}
+.main-content main .order-main .search-but {
+  width: 210px;
+  background-color: #00a046;
+  padding: 10px;
+  font-weight: 650;
+  border: none;
+  flex-shrink: 0;
+  transition: all 0.2s ease 0s;
+}
+.main-content main .order-main .search-but:hover {
+  background-color: #01bb52;
+}
+.main-content main .slider-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+}
+.main-content main .slider-demo img {
+  max-width: 100%;
+  height: auto;
+}
+.main-content main .recomendations-border {
+  border-bottom: 1px solid lightgray;
 }/*# sourceMappingURL=First Page.css.map */

@@ -1,5 +1,6 @@
 @import "../General-files/variables";
 @import "../General-files/mixins";
+@import "../General-files/cards";
 @import "../First-Page-styles/aside";
 @import "../First-Page-styles/section";
 @import "../General-files/header";
@@ -7,12 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-body{
+body {
     font-family: 'Nunito', sans-serif;
     font-weight: normal;
 }
 
-.main-content{
+.main-content {
     @media screen and (min-width: $PCs) {
         padding: 0 32px;
     }
@@ -27,5 +28,80 @@ body{
 
     @media screen and (max-width: $Tablets) {
         padding: 0 8px;
+    }
+
+    main {
+        padding-left: 40px;
+        padding-top: 1px;
+        width: 100%;
+
+        .order-main {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            padding: 12px 17px;
+            border: 1px solid lightgray;
+            // flex-wrap: nowrap;
+
+            .hide {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                flex: 1;
+                // min-width: 0;
+                // overflow: hidden;
+                // white-space: nowrap;
+            }
+
+            img:not(.pr-cart-green) {
+                width: 50px;
+                height: auto;
+            }
+
+            .pr-cart-green {
+                width: 30px;
+                height: auto;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: $font-size-small;
+                // min-width: 0;
+                // flex-wrap: nowrap;
+                // overflow: hidden;
+            }
+
+            .search-but {
+                width: 210px;
+                background-color: #00a046;
+                padding: 10px;
+                font-weight: 650;
+                border: none;
+                flex-shrink: 0;
+                transition: all 0.2s ease 0s;
+
+                &:hover {
+                    background-color: #01bb52;
+                }
+            }
+        }
+
+        .slider-demo {
+            @include flex-center;
+            width: 100%;
+            margin: 15px 0;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .recomendations-border{
+            border-bottom: 1px solid lightgray;
+        }
     }
 }
