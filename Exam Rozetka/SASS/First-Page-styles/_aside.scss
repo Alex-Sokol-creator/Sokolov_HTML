@@ -9,6 +9,10 @@ aside {
     border-right: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
 
+    @media screen and (max-width: $Laptops){
+        display: none;
+    }
+
     .cards {
         border-bottom: 1px solid lightgray;
 

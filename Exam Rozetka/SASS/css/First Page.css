@@ -11,6 +11,11 @@ aside {
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
+@media screen and (max-width: 1024px) {
+  aside {
+    display: none;
+  }
+}
 aside .cards {
   border-bottom: 1px solid lightgray;
 }
@@ -269,6 +274,30 @@ aside .messangers .apps-adv img {
   box-sizing: border-box;
 }
 
+.top-baner {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  background-color: #fefccb;
+}
+.top-baner img {
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .top-baner img {
+    display: none;
+  }
+}
+.top-baner img:last-of-type {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .top-baner img:last-of-type {
+    display: block;
+    height: 100%;
+  }
+}
+
 .header-div {
   display: flex;
   align-items: center;
@@ -280,7 +309,32 @@ aside .messangers .apps-adv img {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
-.header-div button, .header-div a:not(.rz-symbols) {
+@media screen and (max-width: 1280px) {
+  .header-div {
+    gap: 10px;
+    padding: 12px 32px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .header-div {
+    gap: 10px;
+    padding: 12px 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header-div {
+    gap: 10px;
+    padding: 12px 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-div {
+    gap: 10px;
+    padding: 12px 8px;
+  }
+}
+.header-div button,
+.header-div a:not(.rz-symbols) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,7 +345,8 @@ aside .messangers .apps-adv img {
   background-color: transparent;
   transition: all 0.2s ease 0s;
 }
-.header-div button:not(.search-but):hover, .header-div a:not(.rz-symbols):not(.search-but):hover {
+.header-div button:not(.search-but):hover,
+.header-div a:not(.rz-symbols):not(.search-but):hover {
   background-color: rgb(97, 96, 96);
   border-radius: 5px;
 }
@@ -300,6 +355,12 @@ aside .messangers .apps-adv img {
 }
 .header-div .rz-text {
   padding: 8px;
+  padding-left: 14px;
+}
+@media screen and (max-width: 1280px) {
+  .header-div .rz-text {
+    display: none;
+  }
 }
 .header-div .search-but {
   width: 85px;
@@ -309,6 +370,11 @@ aside .messangers .apps-adv img {
 .header-div .search-but:hover {
   background-color: #01bb52;
 }
+@media screen and (max-width: 768px) {
+  .header-div .search-but {
+    display: none;
+  }
+}
 .header-div .Catalog {
   background-color: transparent;
   width: auto;
@@ -317,6 +383,11 @@ aside .messangers .apps-adv img {
   gap: 10px;
   border: 1px solid white;
 }
+@media screen and (max-width: 1024px) {
+  .header-div .Catalog {
+    display: none;
+  }
+}
 .header-div form {
   display: flex;
   align-items: center;
@@ -324,20 +395,44 @@ aside .messangers .apps-adv img {
   margin-left: 10px;
   height: 100%;
   background-color: white;
+  min-width: 0;
 }
 .header-div form input {
   flex: 1;
   border: none;
+  width: 100%;
+  min-width: 0;
+}
+@media screen and (max-width: 768px) {
+  .header-div form input {
+    padding: 1px 12px;
+  }
 }
 .header-div form button:last-of-type {
   position: relative;
   left: 5px;
 }
+@media screen and (max-width: 768px) {
+  .header-div form .loop {
+    display: none;
+  }
+}
 .header-div .header-tools {
   height: 100%;
   gap: 10px;
 }
-.header-div .left-part, .header-div .right-part {
+.header-div .tools-3 {
+  display: flex;
+  height: 100%;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .header-div .tools-3 {
+    display: none;
+  }
+}
+.header-div .left-part,
+.header-div .right-part {
   height: 100%;
   gap: 10px;
 }
@@ -562,4 +657,25 @@ footer .bottom .copyrights {
 body {
   font-family: "Nunito", sans-serif;
   font-weight: normal;
+}
+
+@media screen and (min-width: 1280px) {
+  .main-content {
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .main-content {
+    padding: 0 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-content {
+    padding: 0 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 0 8px;
+  }
 }/*# sourceMappingURL=First Page.css.map */
