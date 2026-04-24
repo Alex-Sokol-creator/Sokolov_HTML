@@ -30,10 +30,18 @@ body {
         padding: 0 8px;
     }
 
+    @media screen and (max-width: 420px) {
+        padding: 0 4px;
+    }
+
     main {
         padding-left: 40px;
         padding-top: 1px;
         width: 100%;
+
+        @media screen and (max-width:$Laptops) {
+            padding-left: 0;
+        }
 
         .order-main {
             display: flex;
@@ -44,6 +52,14 @@ body {
             border: 1px solid lightgray;
             // flex-wrap: nowrap;
 
+            @media screen and (max-width:765px) {
+                justify-content: space-between;
+            }
+
+            @media screen and (max-width:385px) {
+                padding: 6px;
+            }
+
             .hide {
                 display: flex;
                 align-items: center;
@@ -52,6 +68,10 @@ body {
                 // min-width: 0;
                 // overflow: hidden;
                 // white-space: nowrap;
+
+                @media screen and (max-width:765px) {
+                    display: none;
+                }
             }
 
             img:not(.pr-cart-green) {
@@ -75,7 +95,7 @@ body {
             }
 
             .search-but {
-                width: 210px;
+                max-width: 210px;
                 background-color: #00a046;
                 padding: 10px;
                 font-weight: 650;
@@ -100,8 +120,9 @@ body {
             }
         }
 
-        .recomendations-border{
+        .recomendations-border {
             border-bottom: 1px solid lightgray;
+            margin-top: -0.025em;
         }
     }
 }
