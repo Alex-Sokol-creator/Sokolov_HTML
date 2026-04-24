@@ -1,0 +1,60 @@
+@import "../General-files/variables";
+@import "../General-files/mixins";
+@import "../General-files/cards";
+// @import "../First-Page-styles/aside";
+@import "../First-Page-styles/section";
+@import "../General-files/header";
+@import "../General-files/footer";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+}
+
+.main-content {
+    @media screen and (min-width: $PCs) {
+        padding: 0 48px;
+    }
+
+    @media screen and (min-width: $Laptops) and (max-width: $PCs) {
+        padding: 0 24px;
+    }
+
+    @media screen and (min-width: $Tablets) and (max-width: $Laptops) {
+        padding: 0 16px;
+    }
+
+    @media screen and (max-width: $Tablets) {
+        padding: 0 8px;
+    }
+
+    @media screen and (max-width: 420px) {
+        padding: 0 4px;
+    }
+
+    .slider-demo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+        img{
+            width: 70%;
+            height: auto;
+        }
+    }
+
+    .path{
+        font-size: $font-size-small;
+        color: $font-color-secondary;
+        a{
+            color: $font-color-secondary;
+            text-decoration: none;
+            &:hover{
+                color: #01bb52;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -168,3 +168,116 @@
         }
     }
 }
+
+.goods-grid-category {
+    @include card-parameters;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    @media screen and (max-width: $PCs) {
+        grid-template-columns: repeat(3, 1fr);
+        .one-good-category {
+            max-width: 100% !important;
+            width: 100%;
+            border-bottom: 1px solid lightgray;
+        }
+    }
+
+    @media screen and (max-width: $Tablets) {
+        grid-template-columns: repeat(1, 1fr);
+
+        .one-good-category {
+            max-width: 100% !important;
+            width: 100%;
+            border-bottom: 1px solid lightgray;
+
+            .smart-det {
+                width: 5%;
+                height: auto;
+            }
+        }
+    }
+
+    .one-good-category {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 15px 10px;
+        gap: 10px;
+        flex: 1 1 0px;
+        min-width: 170px;
+        max-width: 350px;
+        height: auto;
+        border-right: 1px solid lightgray;
+
+        .good-img-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f6f6;
+            height: 100%;
+            max-height: 150px;
+
+            img {
+                width: auto;
+                height: 100%;
+                max-height: 150px;
+            }
+        }
+
+        .name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                font-size: $font-size-medium;
+                color: #3e77aa;
+
+                &:hover {
+                    color: #f84147;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .name-start{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                font-size: $font-size-medium;
+                color: #3e77aa;
+
+                &:hover {
+                    color: #f84147;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .list-of-links{
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: flex-start;
+            gap: 5px;
+
+            a {
+                // text-align: center;
+                text-decoration: none;
+                font-size: $font-size-small;
+                color: #3e77aa;
+
+                &:hover {
+                    color: #f84147;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
