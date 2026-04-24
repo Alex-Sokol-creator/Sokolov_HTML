@@ -10,6 +10,7 @@
   flex-direction: column;
   position: relative;
   padding: 15px 10px;
+  gap: 5px;
   flex: 1 1 0px;
   min-width: 170px;
   max-width: 250px;
@@ -97,7 +98,7 @@
   display: flex;
   justify-content: space-between;
   gap: 5px;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -107,12 +108,20 @@
     height: auto;
   }
 }
+.goods .one-good .good-detail .good-detail-upper img:last-of-type {
+  transition: all 0.2s ease 0s;
+}
+.goods .one-good .good-detail .good-detail-upper img:last-of-type:hover {
+  border-radius: 5px;
+  background-color: rgb(236, 236, 236);
+}
 
 .goods-grid .one-good {
   display: flex;
   flex-direction: column;
   position: relative;
   padding: 15px 10px;
+  gap: 5px;
   flex: 1 1 0px;
   min-width: 170px;
   max-width: 250px;
@@ -200,7 +209,7 @@
   display: flex;
   justify-content: space-between;
   gap: 5px;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -209,6 +218,13 @@
     width: 40%;
     height: auto;
   }
+}
+.goods-grid .one-good .good-detail .good-detail-upper img:last-of-type {
+  transition: all 0.2s ease 0s;
+}
+.goods-grid .one-good .good-detail .good-detail-upper img:last-of-type:hover {
+  border-radius: 5px;
+  background-color: rgb(236, 236, 236);
 }
 .goods-grid {
   display: grid;
@@ -224,11 +240,23 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+@media screen and (max-width: 768px) {
+  .goods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .goods-grid .one-good {
+    max-width: 100%;
+  }
+  .goods-grid .one-good .smart-det {
+    width: 5%;
+    height: auto;
+  }
+}
 
 aside {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   color: rgb(31, 31, 31);
   width: 300px;
@@ -627,6 +655,10 @@ aside .messangers .apps-adv img {
   width: 100%;
   min-width: 0;
 }
+.header-div form input:focus {
+  border: none;
+  outline: none;
+}
 @media screen and (max-width: 768px) {
   .header-div form input {
     padding: 1px 12px;
@@ -987,4 +1019,7 @@ body {
 .main-content main .recomendations-border {
   border-bottom: 1px solid lightgray;
   margin-top: -0.025em;
+}
+.main-content main .main-goods h5 {
+  margin: 16px 0;
 }/*# sourceMappingURL=First Page.css.map */

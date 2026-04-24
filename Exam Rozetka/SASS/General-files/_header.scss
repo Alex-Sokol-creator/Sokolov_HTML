@@ -136,6 +136,10 @@
             width: 100%;
             min-width: 0;
 
+            &:focus{
+                border: none;
+                outline: none;
+            }
             // width: 75%;
             @media screen and (max-width:$Tablets) {
                 padding: 1px 12px;

@@ -154,4 +154,17 @@
     @media screen and (max-width: $PCs) {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    @media screen and (max-width: $Tablets) {
+        grid-template-columns: repeat(2, 1fr);
+
+        .one-good {
+            max-width: 100%;
+
+            .smart-det {
+                width: 5%;
+                height: auto;
+            }
+        }
+    }
 }

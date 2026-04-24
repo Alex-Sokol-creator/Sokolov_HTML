@@ -70,6 +70,7 @@
         flex-direction: column;
         position: relative;
         padding: 15px 10px;
+        gap: 5px;
         // height: 100%;
         // flex: 1;
         flex: 1 1 0px;
@@ -177,7 +178,7 @@
                 display: flex;
                 justify-content: space-between;
                 gap: 5px;
-                align-items: flex-end;
+                align-items: center;
                 width: 100%;
                 // flex-wrap: wrap;
 
@@ -196,6 +197,16 @@
                     @media screen and (max-width: $Tablets) {
                         width: 40%;
                         height: auto;
+                    }
+                }
+            }
+
+            .good-detail-upper{
+                img:last-of-type{
+                    transition: all 0.2s ease 0s;
+                    &:hover{
+                        border-radius: 5px;
+                        background-color: rgb(236, 236, 236);
                     }
                 }
             }
